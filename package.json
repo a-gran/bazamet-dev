@@ -1,0 +1,19 @@
+{
+  "name": "bazamet-dev",
+  "version": "1.0.0",
+  "description": "Разработка сайта bazamet.ru",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development && webpack serve --open",
+    "dev": "set NODE_ENV=development && webpack",
+    "build": "set NODE_ENV=production && webpack"
+  },
+  "keywords": [],
+  "author": "Aristarh Gran <aristarhgran@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
+  }
+}
