@@ -1,0 +1,23 @@
+$primaryColor: darkcyan;
+$secondaryColor: grey;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: generalFont;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: headerFont;
+}

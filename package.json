@@ -8,16 +8,34 @@
     "dev": "set NODE_ENV=development&&webpack",
     "build": "set NODE_ENV=production&&webpack"
   },
-  "keywords": [],
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "IE 10"
+  ],
+  "keywords": [
+    "sass",
+    "css",
+    "html",
+    "js",
+    "bootstrap5",
+    "plugin",
+    "loader",
+    "git",
+    "webpack"
+  ],
   "author": "Aristarh Gran <aristarhgran@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.6",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.3.0",
     "sass": "^1.49.4",
@@ -26,5 +44,8 @@
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
