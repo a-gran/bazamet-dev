@@ -15,6 +15,9 @@ module.exports = {
     assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
   },
+  entry: {
+    scripts: './src/index.js',
+  },
   devtool: 'source-map',
   plugins: [
     new MiniCssExtractPlugin({
