@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: generalFont;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: headerFont;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-links > a > img {
+  height: 30px;
+  width: 180px;
+}
+
+.top-header-menu {
+  display: inline-block;
+}
+
+.ticker {
+  background-color: #617e8c;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.slider img {
+  height: 400px;
+  width: 100%;
+}
+
+.new {
+  width: 310px;
+  height: 165px;
+}
+
+.header {
+  margin-top: 30px;
+}
+
+.slider {
+  margin-bottom: 30px;
+}
+
+.products {
+  margin-bottom: 20px;
+}
+
+.about {
+  margin-bottom: 10px;
+}
+
+.news {
+  margin-bottom: 40px;
+}
+
+.documents {
+  margin-bottom: 40px;
+}
+
+.partners {
+  margin-bottom: 30px;
+}
+
+.gallery {
+  margin-bottom: 30px;
+}
+
+.gall > img {
+  margin-bottom: 15px;
+  width: 308px;
+  height: 308px;
+}
+
+.doc > img {
+  height: 440px;
+  width: 310px;
+}
+
+.partner > img {
+  height: 100px;
+  width: 200px;
+}
+
+.product {
+  height: 220px;
+  width: 418px;
+  margin-bottom: 20px;
+}
+
+.product-item1 {
+  background-image: url('../images/products/brass.jpg');
+}
+
+.product-item2 {
+  background-image: url('../images/products/brass.jpg');
+}
+
+.product-item3 {
+  background-image: url('../images/products/brass.jpg');
+}
+
+.product-item4 {
+  background-image: url('../images/products/brass.jpg');
+}
+
+.product-item5 {
+  background-image: url('../images/products/brass.jpg');
+}
+
+.product-item6 {
+  background-image: url('../images/products/brass.jpg');
+}
+
+.product-item7 {
+  background-image: url('../images/products/brass.jpg');
+}
+
+.product-item8 {
+  background-image: url('../images/products/brass.jpg');
+}
+
+.product-item9 {
+  background-image: url('../images/products/brass.jpg');
+}
+
+.news-item1 {
+  background-image: url('../images/news/prutm3_002.jpg');
+}
+
+.news-item2 {
+  background-image: url('../images/news/prutm3_002.jpg');
+}
+
+.news-item3 {
+  background-image: url('../images/news/prutm3_002.jpg');
+}
+
+.news-item4 {
+  background-image: url('../images/news/prutm3_002.jpg');
+}
