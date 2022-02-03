@@ -46,6 +46,7 @@
     "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.3"
   }
 }
