@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4/css/fontawesome.min.css">
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/custom.css" />
     <link
@@ -16,27 +17,44 @@
   </head>
   <body>
     <section class="header">
+
       <div class="container top-header">
+
         <div class="row">
+
           <div class="top-header-menu col-6">
-            <div class="menu-links">
-              <a href="/"><img src="./images/logo/logo.png" alt="logo" /></a>
-              <a href="#">Каталог</a>
-              <a href="#">Справочник</a>
-              <a href="#">Контакты</a>
+
+            <div class="top-header-menu-logo">
+
+              <div class="logo">
+                <a href="/"><img src="./images/logo/logo.png" alt="logo" /></a>
+              </div>   
+                       
+              <div class="menu-links">              
+                <a href="#">Каталог</a>
+                <a href="#">Справочник</a>
+                <a href="#">Контакты</a>
+              </div>
             </div>
-            <div class="form-search">
-              <textarea placeholder="Поиск по сайту" id="search"></textarea>
-              <label for="Поиск по сайту"></label>
+            
+            <input type="text">
+          </div>
+
+          <div class="top-empty-block col-2"></div>
+
+          <div class="top-header-contacts col-2">
+            <div class="tel">
+              <a href="tel:+78612040991"><i class="fas fa-mobile-alt"></i>+7(861)204-09-91</a>
             </div>
+            <div class="mail">
+              <a href="mailto:info@bazamet.ru">info@bazamet.ru</a>
+            </div>            
           </div>
-          <div class="top-header-contacts col-2">
-            <a href="tel:+78612040991">+7(861)204-09-91</a>
-            <a href="mailto:info@bazamet.ru">info@bazamet.ru</a>
+
+          <div class="top-header-calc col-2">
+            <div class="btn-calc"><span>калькулятор металлопроката</span></div>
           </div>
-          <div class="top-header-contacts col-2">
-            <div class="btn-calc">калькулятор металлопроката</div>
-          </div>
+
         </div>
       </div>
 
@@ -158,8 +176,7 @@
 
     <section class="container documents">
       <div class="row">
-        <h2>ДОКУМЕНТЫ И СЕРТИФИКАТЫ</h2>
-      </div>
+        <h2>документы исертификаты
       <div class="row">
         <div class="col-3 doc doc-item1">
           <img src="../src/images/certificates/cert1.jpg" alt="doc" />
