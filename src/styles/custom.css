@@ -150,6 +150,16 @@ input[type='text'] {
   justify-content: space-between;
 }
 
+.col-new {
+  margin-bottom: 20px;
+}
+
+.heading-news {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
 .header {
   margin-top: 30px;
 }
@@ -166,16 +176,24 @@ input[type='text'] {
   margin-bottom: 40px;
 }
 
-.documents {
+.container-documents {
   margin-bottom: 40px;
 }
 
-.partners {
+.doc {
+  padding-right: 10px;
+}
+
+.doc:last-child {
+  padding-right: 0px;
+}
+
+.container-partners {
   margin-bottom: 30px;
 }
 
-.gallery {
-  margin-bottom: 30px;
+.container-gallery {
+  padding-bottom: 30px;
 }
 
 .gall > img {
