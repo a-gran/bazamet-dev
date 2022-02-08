@@ -20,11 +20,12 @@ h6 {
     font-family: headerFont;
     text-transform: uppercase;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .about a,
 .new a,
-.footer a {
+.container-footer a {
     text-decoration: none;
 }
 
@@ -172,7 +173,7 @@ input[type='text'] {
     margin-bottom: 10px;
 }
 
-.news {
+.container-news {
     margin-bottom: 40px;
 }
 
@@ -196,20 +197,30 @@ input[type='text'] {
     padding-bottom: 30px;
 }
 
-.gall>img {
-    margin-bottom: 15px;
-    width: 308px;
-    height: 200px;
-}
-
-.doc>img {
-    height: 440px;
-    width: 310px;
-}
-
-.partner>img {
+.partner img {
     height: 100px;
-    width: 200px;
+    width: 100%;
+}
+
+.row-docs a {
+    height: 440px;
+    width: 25%;
+}
+
+.row-docs img {
+    height: 440px;
+    width: 100%;
+}
+
+.photo-item img {
+    height: 200px;
+    width: 100%;
+}
+
+a.photo-item {
+    height: 200px;
+    width: 25%;
+    margin-bottom: 15px;
 }
 
 .products {
@@ -246,6 +257,10 @@ input[type='text'] {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+}
+
+.row-photo-items a {
+    display: block;
 }
 
 
@@ -363,9 +378,10 @@ input[type='text'] {
 
 .soc-icons .fab {
     font-size: 64px;
+    color: #617e8c;
 }
 
-.footer>.row>.col-4>img {
+.container-footer>.row>.col-4>img {
     height: 90px;
     width: 380px;
 }
