@@ -1,14 +1,14 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: generalFont;
-  font-size: 16px;
+    font-family: generalFont;
+    font-size: 16px;
 }
 
 body {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 h1,
@@ -17,367 +17,374 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: headerFont;
-  text-transform: uppercase;
-  text-align: center;
+    font-family: headerFont;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .about a,
 .new a,
 .footer a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .about h6 {
-  text-align: left;
+    text-align: left;
 }
 
-.logo > a > img {
-  height: 30px;
-  width: 180px;
+.logo>a>img {
+    height: 30px;
+    width: 180px;
 }
 
 .logo {
-  padding-right: 40px;
+    padding-right: 40px;
 }
 
 .news-links {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 input[type='text'] {
-  border: 1px solid #cccccc;
-  outline: none;
-  height: 30px;
-  width: 100%;
-  color: #cccccc;
-  font-size: 16px;
+    border: 1px solid #cccccc;
+    outline: none;
+    height: 30px;
+    width: 100%;
+    color: #cccccc;
+    font-size: 16px;
 }
 
-.menu-links > a {
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-  padding-right: 25px;
-  text-transform: uppercase;
-  font-family: headerFont;
+.menu-links>a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 25px;
+    text-transform: uppercase;
+    font-family: headerFont;
 }
 
 .menu-links {
-  position: relative;
-  top: 3px;
+    position: relative;
+    top: 3px;
 }
 
-.menu-links > a:last-child {
-  padding-right: 0px;
+.menu-links>a:last-child {
+    padding-right: 0px;
 }
 
 .top-header-menu-logo {
-  display: flex;
-  margin-bottom: 30px;
+    display: flex;
+    margin-bottom: 30px;
 }
 
 .fas {
-  font-size: 16px;
-  color: #617e8c;
+    font-size: 16px;
+    color: #617e8c;
 }
 
 .top-header-contacts {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-.tel > a,
-.mail > a,
+.tel>a,
+.mail>a,
 .footer-location a,
 .footer-tel a,
 .footer-mail a {
-  color: black;
-  font-size: 16px;
-  font-family: headerFont;
+    color: black;
+    font-size: 16px;
+    font-family: headerFont;
 }
 
 .tel {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
-.soc-icons > i > a {
-  z-index: 3;
+.soc-icons>i>a {
+    z-index: 3;
 }
 
 .footer-location a,
 .footer-tel a {
-  -bottom: 20px;
+    -bottom: 20px;
 }
 
 .top-header-calc {
-  width: 200px;
-  height: 85px;
-  background-color: #455b66;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    width: 200px;
+    height: 85px;
+    background-color: #455b66;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .btn-calc {
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .top-header {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .ticker {
-  background-color: #617e8c;
-  height: 60px;
-  margin-bottom: 30px;
+    background-color: #617e8c;
+    height: 60px;
+    margin-bottom: 30px;
 }
 
-.slider img {
-  height: 400px;
-  width: 100%;
+.container-slider {
+    margin-bottom: 30px;
+}
+
+.container-slider img {
+    height: 400px;
+    width: 100%;
 }
 
 .new {
-  height: 165px;
-  max-width: 260px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    height: 165px;
+    max-width: 260px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .col-new {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .heading-news {
-  font-size: 16px;
-  color: #fff;
-  text-align: center;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
 }
 
 .header {
-  margin-top: 30px;
-}
-
-.slider {
-  margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .about {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .news {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .container-documents {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .doc {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
 .doc:last-child {
-  padding-right: 0px;
+    padding-right: 0px;
 }
 
 .container-partners {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .container-gallery {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
-.gall > img {
-  margin-bottom: 15px;
-  width: 308px;
-  height: 308px;
+.gall>img {
+    margin-bottom: 15px;
+    width: 308px;
+    height: 200px;
 }
 
-.doc > img {
-  height: 440px;
-  width: 310px;
+.doc>img {
+    height: 440px;
+    width: 310px;
 }
 
-.partner > img {
-  height: 100px;
-  width: 200px;
+.partner>img {
+    height: 100px;
+    width: 200px;
 }
 
 .products {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .product {
-  height: 220px;
-  max-width: 418px;
-  margin-bottom: 20px;
-  position: relative;
+    height: 220px;
+    max-width: 418px;
+    margin-bottom: 20px;
+    position: relative;
 }
+
 
 /* блок product, как ссылка */
-.product > a {
-  z-index: 1;
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
+
+.product>a {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
+
 
 /* позиционирование заголовка посередине карточки */
-.product > h6 {
-  color: #fff;
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+
+.product>h6 {
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
+
 
 /* непонятно почему растягивается ссылка больше размера родителя, когда задано 100% ширина и высота */
-.new > a {
-  z-index: 1;
-  position: absolute;
-  display: block;
-  width: 250px;
-  height: 155px;
-  cursor: pointer;
+
+.new>a {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 155px;
+    cursor: pointer;
 }
 
-.new > h6,
+.new>h6,
 .news-links,
 .news-links a {
-  color: #fff;
-  z-index: 2;
+    color: #fff;
+    z-index: 2;
 }
 
-.product > img {
-  width: 100%;
-  height: 100%;
+.product>img {
+    width: 100%;
+    height: 100%;
 }
 
 .product:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .product:hover,
 .new:hover {
-  filter: grayscale(100%);
-  transition: all 1s ease-in-out;
+    filter: grayscale(100%);
+    transition: all 1s ease-in-out;
 }
 
 .new a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 .news-item1 {
-  background-image: url('../images/news/prutm3_002.jpg');
-  background-size: cover;
+    background-image: url('../images/news/prutm3_002.jpg');
+    background-size: cover;
 }
 
 .news-item2 {
-  background-image: url('../images/news/prutm3_002.jpg');
-  background-size: cover;
+    background-image: url('../images/news/prutm3_002.jpg');
+    background-size: cover;
 }
 
 .news-item3 {
-  background-image: url('../images/news/prutm3_002.jpg');
-  background-size: cover;
+    background-image: url('../images/news/prutm3_002.jpg');
+    background-size: cover;
 }
 
 .news-item4 {
-  background-image: url('../images/news/prutm3_002.jpg');
-  background-size: cover;
+    background-image: url('../images/news/prutm3_002.jpg');
+    background-size: cover;
 }
 
 .calc {
-  width: 380px;
-  height: 90px;
-  background-color: #617e8c;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 24px;
-  text-align: center;
-  outline: none;
-  border: none;
+    width: 380px;
+    height: 90px;
+    background-color: #617e8c;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    border: none;
 }
 
-.sun > img {
-  width: 380px;
-  height: 90px;
-  margin-bottom: 30px;
+.sun>img {
+    width: 380px;
+    height: 90px;
+    margin-bottom: 30px;
 }
 
 .sun a {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .copyright {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .menu-links-footer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .menu-links-footer a {
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-family: headerFont;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: headerFont;
 }
 
 .soc-icons {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .soc-icons .fab {
-  font-size: 64px;
+    font-size: 64px;
 }
 
-.footer > .row > .col-4 > img {
-  height: 90px;
-  width: 380px;
+.footer>.row>.col-4>img {
+    height: 90px;
+    width: 380px;
 }
 
 .steelman {
-  width: 380px;
-  height: 90px;
-  background-color: #617e8c;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 42px;
-  letter-spacing: 5px;
-  text-align: center;
-  outline: none;
-  border: none;
+    width: 380px;
+    height: 90px;
+    background-color: #617e8c;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 42px;
+    letter-spacing: 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
 }
 
 .footer-location,
 .footer-tel {
-  padding-bottom: 15px;
+    padding-bottom: 10px;
 }
