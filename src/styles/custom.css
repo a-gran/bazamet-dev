@@ -4,7 +4,7 @@
 
 html {
     font-family: generalFont;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 body {
@@ -13,14 +13,32 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     font-family: headerFont;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5rem;
+}
+
+ol,
+ul,
+li {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 .about a,
@@ -29,7 +47,7 @@ h6 {
     text-decoration: none;
 }
 
-.about h6 {
+.about h3 {
     text-align: left;
 }
 
@@ -59,8 +77,7 @@ input[type='text'] {
 .menu-links>a {
     color: black;
     text-decoration: none;
-    font-size: 16px;
-    padding-right: 25px;
+    padding-right: 20px;
     text-transform: uppercase;
     font-family: headerFont;
 }
@@ -81,12 +98,12 @@ input[type='text'] {
 
 .fa-envelope-open-text,
 .fa-mobile-alt {
-    font-size: 16px;
+    font-size: 20px;
     color: #617e8c;
 }
 
 .fa-calculator {
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -101,7 +118,6 @@ input[type='text'] {
 .footer-tel a,
 .footer-mail a {
     color: black;
-    font-size: 16px;
     font-family: headerFont;
     text-decoration: none;
 }
@@ -116,17 +132,16 @@ input[type='text'] {
     padding-left: 10px;
 }
 
+.top-calc {
+    font-size: 16px;
+}
+
 .tel {
     padding-bottom: 30px;
 }
 
 .soc-icons>i>a {
     z-index: 3;
-}
-
-.footer-location a,
-.footer-tel a {
-    -bottom: 20px;
 }
 
 .top-header-calc {
@@ -270,7 +285,7 @@ a.photo-item {
 
 /* позиционирование заголовка посередине карточки */
 
-.product>h6 {
+.product>h3 {
     color: #fff;
     z-index: 2;
     position: absolute;
@@ -296,7 +311,7 @@ a.photo-item {
     cursor: pointer;
 }
 
-.new>h6,
+.new>h3,
 .news-links,
 .news-links a {
     color: #fff;
@@ -387,7 +402,6 @@ a.photo-item {
 .menu-links-footer a {
     color: black;
     text-decoration: none;
-    font-size: 16px;
     text-transform: uppercase;
     font-family: headerFont;
 }
@@ -424,4 +438,141 @@ a.photo-item {
 .footer-location,
 .footer-tel {
     padding-bottom: 10px;
+}
+
+.footer-location a,
+.footer-tel a {
+    margin-bottom: 20px;
+}
+
+
+/* catalog */
+
+.breadcrumb-item a,
+.breadcrumb-item {
+    text-decoration: none;
+    color: #455B66;
+    text-transform: uppercase;
+}
+
+.breadcrumb-item.active {
+    color: #253238;
+}
+
+.breadcrumb-item.active:after {
+    content: '...';
+}
+
+.row-catalog li::before,
+.container-helper-items li::before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #455b66;
+    border-bottom: 5px solid transparent;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.row-catalog li {
+    text-transform: lowercase;
+}
+
+
+/* справочник */
+
+.left-dropmenu li {
+    width: 310px;
+    height: 60px;
+    background-color: #90a4af;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: #fff;
+}
+
+.left-dropmenu-items li {
+    width: 270px;
+    height: 40px;
+    background-color: #B0BFC6;
+    text-transform: lowercase;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 12px;
+    line-height: 36px;
+    color: #000;
+    margin-left: 40px;
+}
+
+.left-dropmenu-items li:last-child {
+    margin-bottom: 10px;
+}
+
+.col-heading-helper-empty {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-helper,
+.container-new,
+.container-news,
+.container-product {
+    display: flex;
+}
+
+.col-heading-helper>h1 {
+    margin-bottom: 20px;
+}
+
+.row.row-helper-items1,
+.row.row-helper-items2 {
+    margin-bottom: 20px;
+}
+
+.container.container-helper-items {
+    margin-left: 30px;
+}
+
+
+/* new */
+
+.row-banner img,
+.row-product-content img {
+    width: 100%;
+    max-height: 500px;
+}
+
+.container-new,
+.container-news {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.row-heading-new h1 {
+    background-image: url('../images/news/prutm3_002.jpg');
+    color: #fff;
+    height: 200px;
+    width: 100%;
+    line-height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* news */
+
+.row-heading-news-sample h2 {
+    text-align: left;
+}
+
+.row-more-news-sample a {
+    text-decoration: none;
+    color: #455B66;
+}
+
+.row-more-news-sample a:hover {
+    color: #253238;
 }
