@@ -79,9 +79,15 @@ input[type='text'] {
     margin-bottom: 30px;
 }
 
-.fas {
+.fa-envelope-open-text,
+.fa-mobile-alt {
     font-size: 16px;
     color: #617e8c;
+}
+
+.fa-calculator {
+    font-size: 16px;
+    color: #fff;
 }
 
 .top-header-contacts {
@@ -97,6 +103,17 @@ input[type='text'] {
     color: black;
     font-size: 16px;
     font-family: headerFont;
+    text-decoration: none;
+}
+
+.top-header-contacts {
+    list-style: none;
+}
+
+.tel-content,
+.mail-content,
+.top-calc {
+    padding-left: 10px;
 }
 
 .tel {
@@ -123,8 +140,12 @@ input[type='text'] {
 
 .btn-calc {
     text-align: center;
+}
+
+.btn-calc a {
     color: #fff;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .top-header {
@@ -287,7 +308,7 @@ a.photo-item {
     height: 100%;
 }
 
-.product:after {
+.product::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -350,7 +371,7 @@ a.photo-item {
     height: 100%;
 }
 
-.copyright {
+.row-copyright {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
