@@ -1,3 +1,5 @@
+/* ---- стили на все страницы ---- */
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +11,7 @@ html {
 
 body {
     margin: 0 auto;
+    padding: 0;
 }
 
 h1,
@@ -17,12 +20,14 @@ h3 {
     font-family: headerFont;
     text-transform: uppercase;
     text-align: center;
+    color: #253238;
 }
 
 ol,
 ul,
 li {
     padding: 0px;
+    color: #253238;
 }
 
 li {
@@ -41,10 +46,19 @@ h3 {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ---- стили шапка ---- */
+
 .about a,
 .new a,
 .container-footer a {
     text-decoration: none;
+    color: #253238;
 }
 
 .about h3 {
@@ -65,25 +79,37 @@ h3 {
     justify-content: space-between;
 }
 
+
+/* ------------- форма поиска ------------ */
+
 input[type='text'] {
-    border: 2px solid #cccccc;
+    border: 2px solid #617e8c;
     outline: none;
     height: 30px;
     width: 100%;
-    color: #cccccc;
+    color: #253238;
     font-size: 16px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.search {
+    display: flex;
+    background-color: #617e8c;
     border-radius: 3px;
 }
 
-input[type='text']::before {
-    content: '\f641';
-    font-family: 'Font Awesome\ 5 Free';
-    font-size: 24px;
-    color: #000;
+.fa-search {
+    color: #ffffff;
+    position: relative;
+    top: 7px;
+    margin-right: 5px;
+    margin-left: 8px;
+    font-size: 16px;
 }
 
 .menu-links>a {
-    color: black;
+    color: #253238;
     text-decoration: none;
     padding-right: 20px;
     text-transform: uppercase;
@@ -91,6 +117,7 @@ input[type='text']::before {
 }
 
 .menu-links {
+    color: #253238;
     position: relative;
     top: 3px;
 }
@@ -105,19 +132,16 @@ input[type='text']::before {
 }
 
 .fa-envelope-open-text,
-.fa-mobile-alt {
+.fa-mobile-alt,
+.fa-map-marker-alt {
     font-size: 20px;
     color: #617e8c;
-}
-
-.fa-calculator {
-    font-size: 20px;
-    color: #fff;
 }
 
 .top-header-contacts {
     display: flex;
     flex-direction: column;
+    color: #253238;
 }
 
 .tel>a,
@@ -125,7 +149,7 @@ input[type='text']::before {
 .footer-location a,
 .footer-tel a,
 .footer-mail a {
-    color: black;
+    color: #253238;
     font-family: headerFont;
     text-decoration: none;
 }
@@ -135,13 +159,8 @@ input[type='text']::before {
 }
 
 .tel-content,
-.mail-content,
-.top-calc {
+.mail-content {
     padding-left: 10px;
-}
-
-.top-calc {
-    font-size: 16px;
 }
 
 .tel {
@@ -152,37 +171,23 @@ input[type='text']::before {
     z-index: 3;
 }
 
-.top-header-calc {
-    width: 200px;
-    height: 85px;
-    background-color: #455b66;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.container-about h3 {
+    text-align: left;
 }
 
-.btn-calc {
-    text-align: center;
-}
-
-.btn-calc a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.top-header {
-    margin-bottom: 30px;
+.container-about a:hover {
+    color: #617e8c;
+    text-decoration: underline;
 }
 
 .ticker {
     background-color: #617e8c;
-    height: 60px;
+    height: 40px;
     margin-bottom: 30px;
 }
 
 .container-slider {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .container-slider img {
@@ -190,17 +195,26 @@ input[type='text']::before {
     width: 100%;
 }
 
+
+/* --- О компании ---- */
+
+.about h2 {
+    padding-bottom: 0px;
+}
+
 .new {
     height: 165px;
-    max-width: 260px;
-    padding: 10px;
+    max-width: 24%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-right: 10px;
 }
 
-.col-new {
-    margin-bottom: 20px;
+.new:last-child {
+    margin-right: 0px;
 }
 
 .heading-news {
@@ -211,10 +225,6 @@ input[type='text']::before {
 
 .header {
     margin-top: 30px;
-}
-
-.about {
-    margin-bottom: 10px;
 }
 
 .container-news {
@@ -267,7 +277,11 @@ a.photo-item {
     margin-bottom: 15px;
 }
 
-.products {
+.container-products {
+    margin-bottom: 20px;
+}
+
+.container-products>.row>h1 {
     margin-bottom: 20px;
 }
 
@@ -307,9 +321,6 @@ a.photo-item {
     display: block;
 }
 
-
-/* непонятно почему растягивается ссылка больше размера родителя, когда задано 100% ширина и высота */
-
 .new>a {
     z-index: 1;
     position: absolute;
@@ -324,6 +335,7 @@ a.photo-item {
 .news-links a {
     color: #fff;
     z-index: 2;
+    font-size: 16px;
 }
 
 .product>img {
@@ -344,7 +356,7 @@ a.photo-item {
 .product:hover,
 .new:hover {
     filter: grayscale(100%);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .new a:hover {
@@ -371,20 +383,8 @@ a.photo-item {
     background-size: cover;
 }
 
-.calc {
-    width: 380px;
-    height: 90px;
-    background-color: #617e8c;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 24px;
-    text-align: center;
-    outline: none;
-    border: none;
-}
-
-.sun>img {
-    width: 380px;
+.sun>a>img {
+    width: 100%;
     height: 90px;
     margin-bottom: 30px;
 }
@@ -394,16 +394,79 @@ a.photo-item {
     height: 100%;
 }
 
-.row-copyright {
+.col-right-footer {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.col-center-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.col-left-footer {
+    margin-right: 20px;
+}
+
+
+/* ---- калькуляторы ---- */
+
+.fa-calculator {
+    font-size: 20px;
+    color: #fff;
+}
+
+.top-calc {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.top-header-calc {
+    width: 200px;
+    height: 85px;
+    background-color: #455b66;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+}
+
+.btn-calc a,
+.btn-calc-footer a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-calc-footer {
+    width: 100%;
+    height: 90px;
+    background-color: #617e8c;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.btn-calc-footer>a {
+    line-height: 100%;
+    font-size: 20px;
+}
+
+.btn-calc-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .menu-links-footer {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 50px;
 }
 
@@ -419,18 +482,18 @@ a.photo-item {
     justify-content: space-between;
 }
 
-.soc-icons .fab {
-    font-size: 64px;
-    color: #617e8c;
-}
-
-.container-footer>.row>.col-4>img {
+.container-footer img {
     height: 90px;
     width: 380px;
 }
 
+.row-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .steelman {
-    width: 380px;
+    width: 100%;
     height: 90px;
     background-color: #617e8c;
     color: #fff;
@@ -444,13 +507,26 @@ a.photo-item {
 }
 
 .footer-location,
-.footer-tel {
-    padding-bottom: 10px;
+.footer-tel,
+.footer-mail {
+    text-align: center;
 }
 
-.footer-location a,
-.footer-tel a {
-    margin-bottom: 20px;
+.fa-instagram-square,
+.fa-youtube-square,
+.fa-vk,
+.fa-facebook-square {
+    font-size: 64px;
+    color: #617e8c;
+}
+
+
+/*--- copyright ----*/
+
+.row-copyright {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -524,10 +600,19 @@ a.photo-item {
 }
 
 .container-helper,
-.container-new,
-.container-news,
+.row-news,
 .container-product {
     display: flex;
+}
+
+.container-news h2 {
+    margin-bottom: 20px;
+}
+
+.row-news {
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 15px;
 }
 
 .col-heading-helper>h1 {
@@ -552,9 +637,12 @@ a.photo-item {
     max-height: 500px;
 }
 
-.container-new,
-.container-news {
+.container-new {
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container-news {
     margin-bottom: 40px;
 }
 
