@@ -66,12 +66,20 @@ h3 {
 }
 
 input[type='text'] {
-    border: 1px solid #cccccc;
+    border: 2px solid #cccccc;
     outline: none;
     height: 30px;
     width: 100%;
     color: #cccccc;
     font-size: 16px;
+    border-radius: 3px;
+}
+
+input[type='text']::before {
+    content: '\f641';
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 24px;
+    color: #000;
 }
 
 .menu-links>a {
