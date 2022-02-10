@@ -184,6 +184,11 @@ input[type='text'] {
     background-color: #617e8c;
     height: 40px;
     margin-bottom: 30px;
+    color: #fff;
+}
+
+marquee {
+    line-height: 38px;
 }
 
 .container-slider {
