@@ -329,23 +329,6 @@ a.photo-item {
     display: block;
 }
 
-.new>a {
-    z-index: 1;
-    position: absolute;
-    display: block;
-    width: 250px;
-    height: 155px;
-    cursor: pointer;
-}
-
-.new>h3,
-.news-links,
-.news-links a {
-    color: #fff;
-    z-index: 2;
-    font-size: 16px;
-}
-
 .product>img {
     width: 100%;
     height: 100%;
@@ -361,40 +344,9 @@ a.photo-item {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.product:hover,
-.new:hover {
+.product:hover {
     filter: grayscale(100%);
     transition: all 0.5s ease-in-out;
-}
-
-.new a:hover {
-    color: #fff;
-}
-
-.news-item1 {
-    background-image: url('../images/news/prutm3_002.jpg');
-    background-size: cover;
-}
-
-.news-item2 {
-    background-image: url('../images/news/prutm3_002.jpg');
-    background-size: cover;
-}
-
-.news-item3 {
-    background-image: url('../images/news/prutm3_002.jpg');
-    background-size: cover;
-}
-
-.news-item4 {
-    background-image: url('../images/news/prutm3_002.jpg');
-    background-size: cover;
-}
-
-.sun>a>img {
-    width: 100%;
-    height: 90px;
-    margin-bottom: 30px;
 }
 
 .sun a {
@@ -411,10 +363,6 @@ a.photo-item {
 
 .col-center-footer {
     margin-left: 20px;
-    margin-right: 20px;
-}
-
-.col-left-footer {
     margin-right: 20px;
 }
 
@@ -492,7 +440,7 @@ a.photo-item {
 
 .container-footer img {
     height: 90px;
-    width: 380px;
+    width: 410px;
 }
 
 .row-footer {
@@ -500,24 +448,27 @@ a.photo-item {
     justify-content: space-between;
 }
 
-.steelman {
+.logo-footer {
+    position: relative;
     width: 100%;
     height: 90px;
-    background-color: #617e8c;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 42px;
-    letter-spacing: 5px;
-    text-align: center;
-    outline: none;
-    border: none;
-    margin-bottom: 10px;
+    bottom: 10px;
+}
+
+.col-left-footer {
+    margin-right: 10px;
+}
+
+.footer-contacts {
+    position: relative;
+    top: 15px;
 }
 
 .footer-location,
 .footer-tel,
 .footer-mail {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .fa-instagram-square,
@@ -607,20 +558,16 @@ a.photo-item {
     margin: 0px;
 }
 
-.container-helper,
-.row-news,
+.container-helper {
+    display: flex;
+}
+
 .container-product {
     display: flex;
 }
 
 .container-news h2 {
     margin-bottom: 20px;
-}
-
-.row-news {
-    justify-content: space-between;
-    width: 100%;
-    padding-left: 15px;
 }
 
 .col-heading-helper>h1 {
@@ -637,7 +584,73 @@ a.photo-item {
 }
 
 
-/* new */
+/* ---- новости на главной ---- */
+
+.news {
+    position: relative;
+}
+
+.heading-news {
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+}
+
+.news-more {
+    position: absolute;
+    width: 100%;
+    padding: 0 30px 15px 15px;
+    bottom: 0;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news>a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container-news {
+    margin-bottom: 40px;
+}
+
+.news img {
+    height: 165px;
+    width: 310px;
+}
+
+.date-news,
+.link-more a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.news a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.news .link-more a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.news:hover {
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* news */
 
 .row-banner img,
 .row-product-content img {
@@ -650,11 +663,8 @@ a.photo-item {
     margin-bottom: 40px;
 }
 
-.container-news {
-    margin-bottom: 40px;
-}
 
-.row-heading-new h1 {
+/* .row-heading-new h1 {
     background-image: url('../images/news/prutm3_002.jpg');
     color: #fff;
     height: 200px;
@@ -663,7 +673,7 @@ a.photo-item {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 
 /* news */
@@ -680,3 +690,6 @@ a.photo-item {
 .row-more-news-sample a:hover {
     color: #253238;
 }
+
+
+/*  */
