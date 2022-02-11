@@ -12,6 +12,7 @@ html {
 body {
     margin: 0 auto;
     padding: 0;
+    line-height: 1.2;
 }
 
 h1,
@@ -52,7 +53,7 @@ a {
 }
 
 
-/* ---- стили шапка ---- */
+/* ---- стили для шапки ---- */
 
 .about a,
 .new a,
@@ -204,7 +205,7 @@ marquee {
 }
 
 
-/* --- О компании ---- */
+/* --- page about О компании ---- */
 
 .about h2 {
     padding-bottom: 0px;
@@ -489,101 +490,6 @@ a.photo-item {
 }
 
 
-/* catalog */
-
-.breadcrumb-item a,
-.breadcrumb-item {
-    text-decoration: none;
-    color: #455B66;
-    text-transform: uppercase;
-}
-
-.breadcrumb-item.active {
-    color: #253238;
-}
-
-.breadcrumb-item.active:after {
-    content: '...';
-}
-
-.row-catalog li::before,
-.container-helper-items li::before {
-    content: '';
-    display: inline-block;
-    border-top: 5px solid transparent;
-    border-left: 10px solid #455b66;
-    border-bottom: 5px solid transparent;
-    margin-right: 5px;
-    margin-bottom: 2px;
-}
-
-.row-catalog li {
-    text-transform: lowercase;
-}
-
-
-/* справочник */
-
-.left-dropmenu li {
-    width: 310px;
-    height: 60px;
-    background-color: #90a4af;
-    margin-bottom: 10px;
-    text-align: left;
-    padding-left: 20px;
-    text-transform: uppercase;
-    line-height: 60px;
-    color: #fff;
-}
-
-.left-dropmenu-items li {
-    width: 270px;
-    height: 40px;
-    background-color: #B0BFC6;
-    text-transform: lowercase;
-    margin-bottom: 5px;
-    text-align: left;
-    padding-left: 12px;
-    line-height: 36px;
-    color: #000;
-    margin-left: 40px;
-}
-
-.left-dropmenu-items li:last-child {
-    margin-bottom: 10px;
-}
-
-.col-heading-helper-empty {
-    padding: 0px;
-    margin: 0px;
-}
-
-.container-helper {
-    display: flex;
-}
-
-.container-product {
-    display: flex;
-}
-
-.container-news h2 {
-    margin-bottom: 20px;
-}
-
-.col-heading-helper>h1 {
-    margin-bottom: 20px;
-}
-
-.row.row-helper-items1,
-.row.row-helper-items2 {
-    margin-bottom: 20px;
-}
-
-.container.container-helper-items {
-    margin-left: 30px;
-}
-
-
 /* ---- новости на главной ---- */
 
 .news {
@@ -650,33 +556,102 @@ a.photo-item {
 }
 
 
-/* news */
+/* page catalog */
 
-.row-banner img,
-.row-product-content img {
-    width: 100%;
-    max-height: 500px;
+.breadcrumb-item a,
+.breadcrumb-item {
+    text-decoration: none;
+    color: #455B66;
+    text-transform: uppercase;
 }
 
-.container-new {
-    margin-top: 40px;
-    margin-bottom: 40px;
+.breadcrumb-item.active {
+    color: #253238;
+}
+
+.breadcrumb-item.active:after {
+    content: '...';
+}
+
+.row-catalog li::before,
+.container-helper-items li::before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #455b66;
+    border-bottom: 5px solid transparent;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.row-catalog li {
+    text-transform: lowercase;
 }
 
 
-/* .row-heading-new h1 {
-    background-image: url('../images/news/prutm3_002.jpg');
+/* page helper справочник */
+
+.left-dropmenu li {
+    width: 310px;
+    height: 60px;
+    background-color: #90a4af;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+    text-transform: uppercase;
+    line-height: 60px;
     color: #fff;
-    height: 200px;
-    width: 100%;
-    line-height: 200px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+}
+
+.left-dropmenu-items li {
+    width: 270px;
+    height: 40px;
+    background-color: #B0BFC6;
+    text-transform: lowercase;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 12px;
+    line-height: 36px;
+    color: #000;
+    margin-left: 40px;
+}
+
+.left-dropmenu-items li:last-child {
+    margin-bottom: 10px;
+}
+
+.col-heading-helper-empty {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-helper {
+    display: flex;
+}
+
+.container-product {
+    display: flex;
+}
+
+.container-news h2 {
+    margin-bottom: 20px;
+}
+
+.col-heading-helper>h1 {
+    margin-bottom: 20px;
+}
+
+.row.row-helper-items1,
+.row.row-helper-items2 {
+    margin-bottom: 20px;
+}
+
+.container.container-helper-items {
+    margin-left: 30px;
+}
 
 
-/* news */
+/* ---- шаблон новости ---- */
 
 .row-heading-news-sample h2 {
     text-align: left;
@@ -692,4 +667,77 @@ a.photo-item {
 }
 
 
+/* page news */
+
+
 /*  */
+
+.row-banner img {
+    width: 100%;
+    max-height: 500px;
+}
+
+
+/*  */
+
+.container-page-news {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+
+/*  */
+
+.row-heading-news img {
+    height: 100px;
+    width: 100%;
+}
+
+
+/*  */
+
+.row-heading-news {
+    position: relative;
+}
+
+.row-heading-news h1 {
+    position: absolute;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+}
+
+
+/* page product */
+
+.container-product-all {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.row-heading-product img {
+    height: 100px;
+    width: 100%;
+}
+
+.row-heading-product {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.row-heading-product h1 {
+    position: absolute;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+}
+
+.row-product-content img {
+    width: 100%;
+    max-height: 500px;
+}
