@@ -195,6 +195,9 @@ marquee {
     margin-bottom: 40px;
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {}
+
 .container-slider img {
     height: 400px;
     width: 100%;
