@@ -916,3 +916,72 @@ iframe {
 .timework {
     margin-top: 30px;
 }
+
+
+/* productCategory */
+
+.row-heading-productCategory img {
+    height: 100px;
+    width: 100%;
+}
+
+.row-heading-productCategory {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.row-heading-productCategory h1 {
+    position: absolute;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+}
+
+.container-productCategory {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+span.warn {
+    color: red;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row-heading-textAboutCompany img {
+    height: 50vh;
+    width: 100%;
+}
+
+.row-textAboutCompany-2 h3 {
+    text-align: left;
+}
+
+.all-products-pages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-price-heading .price-item-name {
+    text-align: center;
+}
+
+.price-item-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.row-price-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.row-price-heading>div {
+    text-align: center;
+}
