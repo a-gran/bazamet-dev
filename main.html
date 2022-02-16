@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- бургер -->
     <nav class="navbar">
         <div class="container-navbar">
             <div class="navbar__wrap">
@@ -24,9 +25,9 @@
                         <span class="bar"></span>
                     </div>
                 </div>
-                <a href="/" class="logo" id="logo">
-                    <img src="images/logo/logo3.png" alt="logo">
-                </a>
+                <div class="logo logo-top">
+                    <a href="/"><img src="images/logo/logo3.png" alt="logo" /></a>
+                </div>
                 <ul class="menu" id="menu">
                     <li><a href="#">Каталог</a></li>
                     <li><a href="#">Спарвочник</a></li>
@@ -40,12 +41,12 @@
     <section class="header">
         <div class="container top-header">
             <div class="row row-top-header">
-                <div class="top-header-menu col-xs-3 col-sm-12 col-md-8 col-lg-6">
+                <div class="top-header-menu col-lg-6">
                     <div class="top-header-menu-logo row">
-                        <div class="logo col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <div class="logo col-lg-4">
                             <a href="/"><img src="images/logo/logo3.png" alt="logo" /></a>
                         </div>
-                        <div class="menu-links col-xs-6 col-sm-8 col-md-8 col-lg-8">
+                        <div class="menu-links col-lg-8">
                             <a href="#">Каталог</a>
                             <a href="#">Справочник</a>
                             <a href="#">Контакты</a>
@@ -56,9 +57,6 @@
                         <input type="text" placeholder="  Поиск по сайту...">
                     </form>
                 </div>
-
-
-                <div class="top-empty-block col-lg-2"></div>
 
                 <ul class="top-header-contacts col-xs col-sm-3 col-md-2 col-lg-2">
                     <li class="tel">
@@ -97,12 +95,15 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <p class="slide-content">Снижаем цены,<br> а не качество!</p>
                     <img src="images/slider/slide2.jpg" class="d-block w-100" alt="slide1">
                 </div>
                 <div class="carousel-item">
+                    <p class="slide-content"> Всегда в наличии<br> более 300 тонн металлопроката</p>
                     <img src="images/slider/slide22.jpg" class="d-block w-100" alt="slide2">
                 </div>
                 <div class="carousel-item">
+                    <p class="slide-content">Оперативно доставляем<br> по всей территории России</p>
                     <img src="images/slider/slide3.jpg" class="d-block w-100" alt="slide3">
                 </div>
             </div>
@@ -414,7 +415,7 @@
                 <div class="btn-calc-footer ">
                     <a href="/catalog/calc ">
                         <i class="fas fa-calculator "></i>
-                        <span class="footer-calc ">калькулятор металлопроката</span>
+                        <span class="footer-calc ">калькулятор<br> металлопроката</span>
                     </a>
                 </div>
             </div>
