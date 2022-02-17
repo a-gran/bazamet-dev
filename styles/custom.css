@@ -123,7 +123,7 @@ input[type='text'] {
 
 .menu-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     color: #253238;
     position: relative;
     top: 3px;
@@ -134,7 +134,6 @@ input[type='text'] {
 }
 
 .top-header-menu-logo.row {
-    display: flex;
     margin-bottom: 10px;
 }
 
@@ -220,17 +219,22 @@ marquee {
 
 .slide-content {
     text-align: center;
-    text-shadow: 0 0 20px #FF0000, 0 0 20px #0000FF;
-    color: #fff;
+    text-shadow: #000 1px 1px;
+    color: #000;
     font-size: 42px;
     letter-spacing: 0.1em;
     font-style: italic;
-    background-color: #455B66;
-    opacity: 0.75;
+    background-color: #fff;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .carousel-control-next-icon,
-.carousel-control-prev-icon {}
+.carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+}
 
 .container-slider img {
     height: 400px;
@@ -590,7 +594,7 @@ a.photo-item {
 
 .news::after {
     content: '';
-    width: 90%;
+    width: 91%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -1054,76 +1058,7 @@ span.warn {
 }
 
 
-/* ---- media ---- */
-
-@media (max-width: 768px) {
-    .logo {
-        padding-right: 0px;
-    }
-    .menu-links {
-        font-size: 18px;
-    }
-    .search {
-        margin-bottom: 10px;
-    }
-    .news {
-        margin-bottom: 10px;
-    }
-    .row-docs a {
-        margin-bottom: 20px;
-    }
-    .row-footer {
-        flex-direction: column;
-    }
-    .row-copyright {
-        padding: 0px;
-        margin-top: 10px;
-    }
-    .sun {
-        margin-top: 10px;
-        margin-right: 5px;
-    }
-    .btn-calc-footer {
-        margin-top: 10px;
-        margin-left: 5px;
-    }
-    .serch-bottom {
-        margin-top: 30px;
-    }
-    .col-right-footer {
-        align-items: center;
-        flex-direction: row;
-    }
-    .logo-footer {
-        text-align: center;
-    }
-    .footer-contacts {
-        display: flex;
-        font-size: 14px;
-        align-items: center;
-        justify-content: center;
-    }
-    .footer-contacts .footer-tel {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container-slider,
-    .container-gallery,
-    .container-partners,
-    .container-documents {
-        display: none;
-    }
-}
-
-
 /* ---- гамбургер ---- */
-
-.logo-top {
-    padding-top: 10px;
-}
 
 .navbar {
     top: 200px;
@@ -1185,9 +1120,101 @@ span.warn {
     margin-bottom: 20px;
 }
 
+
+/* ---- media ---- */
+
+
+/* 0 - 768px - xs, sm */
+
+@media (max-width: 768px) {
+    .logo {
+        padding-right: 0px;
+    }
+    .menu-links {
+        font-size: 18px;
+    }
+    .search {
+        margin-bottom: 10px;
+    }
+    .news {
+        margin-bottom: 10px;
+    }
+    .row-docs a {
+        margin-bottom: 20px;
+    }
+    .row-footer {
+        flex-direction: column;
+    }
+    .row-copyright {
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .sun {
+        margin-top: 10px;
+        margin-right: 5px;
+        width: 50%;
+    }
+    .sun img {
+        width: 100%;
+    }
+    .btn-calc-footer {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 50%;
+    }
+    .serch-bottom {
+        margin-top: 30px;
+    }
+    .col-right-footer {
+        align-items: center;
+        flex-direction: row;
+    }
+    .logo-footer {
+        text-align: center;
+    }
+    .footer-contacts {
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer-contacts .footer-tel {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+/* исчезновение нескольких блоков и появление 
+гамбургера мобильного меню при разрешении 992px 
+и меньше, переход на мобильную версию */
+
+@media (max-width: 992px) {
+    .container-slider,
+    .container-gallery,
+    .container-partners,
+    .container-documents {
+        display: none;
+    }
+}
+
+
+/* исчезновение гамбургера мобильного меню 
+при разрешении 993px и больше, переход 
+на десктопную версию */
+
 @media (min-width: 993px) {
     .navbar {
         display: none;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .menu-links {
+        font-size: 16px;
+        top: 6px;
     }
 }
 
@@ -1198,6 +1225,53 @@ span.warn {
     .header {
         display: none;
     }
+}
+
+
+/* костыль для нормального расположения 
+темной подложки под изображением*/
+
+@media (max-width: 575px) {
+    .news::after {
+        width: 95%;
+    }
+}
+
+@media (min-width: 576px) {
+    .news::after {
+        width: 88%;
+    }
+}
+
+@media (min-width: 768px) {
+    .news::after {
+        width: 88%;
+    }
+}
+
+@media (min-width: 992px) {
+    .news::after {
+        width: 89%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .news::after {
+        width: 91%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .news::after {
+        width: 91%;
+    }
+}
+
+
+/* стили мобильного меню 
+при размерах экрана до 992px */
+
+@media (max-width: 992px) {
     .navbar__wrap .menu {
         display: none;
     }
