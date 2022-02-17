@@ -145,6 +145,10 @@ input[type='text'] {
     color: #617e8c;
 }
 
+.fa-whatsapp {
+    color: #008000;
+}
+
 .top-header-contacts {
     display: flex;
     flex-direction: column;
@@ -917,7 +921,7 @@ iframe {
 }
 
 .btn-primary {
-    margin-top: 1.5rem;
+    margin-top: 15px;
     width: 100%;
     margin-bottom: 10px;
     background-color: #617e8c;
@@ -945,9 +949,19 @@ iframe {
     text-align: center;
 }
 
-.policy {
+label {
     font-size: 14px;
-    text-align: center;
+}
+
+.checkbox {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    position: relative;
+    top: 1px;
 }
 
 .policy-link {
@@ -1124,74 +1138,11 @@ span.warn {
 /* ---- media ---- */
 
 
-/* 0 - 768px - xs, sm */
-
-@media (max-width: 768px) {
-    .logo {
-        padding-right: 0px;
-    }
-    .menu-links {
-        font-size: 18px;
-    }
-    .search {
-        margin-bottom: 10px;
-    }
-    .news {
-        margin-bottom: 10px;
-    }
-    .row-docs a {
-        margin-bottom: 20px;
-    }
-    .row-footer {
-        flex-direction: column;
-    }
-    .row-copyright {
-        padding: 0px;
-        margin-top: 10px;
-    }
-    .sun {
-        margin-top: 10px;
-        margin-right: 5px;
-        width: 50%;
-    }
-    .sun img {
-        width: 100%;
-    }
-    .btn-calc-footer {
-        margin-top: 10px;
-        margin-left: 5px;
-        width: 50%;
-    }
-    .serch-bottom {
-        margin-top: 30px;
-    }
-    .col-right-footer {
-        align-items: center;
-        flex-direction: row;
-    }
-    .logo-footer {
-        text-align: center;
-    }
-    .footer-contacts {
-        display: flex;
-        font-size: 14px;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .footer-contacts .footer-tel {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-
-
 /* исчезновение нескольких блоков и появление 
 гамбургера мобильного меню при разрешении 992px 
 и меньше, переход на мобильную версию */
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .container-slider,
     .container-gallery,
     .container-partners,
@@ -1205,7 +1156,7 @@ span.warn {
 при разрешении 993px и больше, переход 
 на десктопную версию */
 
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     .navbar {
         display: none;
     }
@@ -1239,25 +1190,19 @@ span.warn {
 
 @media (min-width: 576px) {
     .news::after {
-        width: 88%;
+        width: 89%;
     }
 }
 
 @media (min-width: 768px) {
     .news::after {
-        width: 88%;
-    }
-}
-
-@media (min-width: 992px) {
-    .news::after {
-        width: 89%;
+        width: 92%;
     }
 }
 
 @media (min-width: 1200px) {
     .news::after {
-        width: 91%;
+        width: 89%;
     }
 }
 
@@ -1341,5 +1286,65 @@ span.warn {
     }
     body.noscroll {
         overflow: hidden;
+    }
+}
+
+
+/* 0 - 767px - xs, sm */
+
+@media (max-width: 991px) {
+    .news {
+        margin-bottom: 10px;
+    }
+    .row-docs a {
+        margin-bottom: 20px;
+    }
+    .row-footer {
+        flex-direction: column;
+    }
+    .row-copyright {
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .sun {
+        margin-top: 10px;
+        margin-right: 5px;
+        width: 50%;
+    }
+    .sun img {
+        width: 100%;
+    }
+    .btn-calc-footer {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 50%;
+    }
+    .serch-bottom {
+        margin-top: 30px;
+    }
+    .col-right-footer {
+        align-items: center;
+        flex-direction: row;
+    }
+    .logo-footer {
+        text-align: center;
+    }
+    .footer-contacts {
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer-contacts .footer-tel {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-contacts {
+        font-size: 16px;
     }
 }
