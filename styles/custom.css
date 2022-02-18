@@ -57,13 +57,11 @@ a {
 }
 
 
-/* отступы в строках */
+/* стандартные отступы bootstrap в строках */
 
-
-/* .row {
+.row-top-header {
     --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-} */
+}
 
 
 /* ---- стили для шапки ---- */
@@ -79,7 +77,8 @@ a {
     text-align: left;
 }
 
-.logo>a>img {
+.logo-top>a>img,
+.logo-top-navbar>a>img {
     height: 30px;
 }
 
@@ -132,7 +131,7 @@ input[type='text'] {
 
 .menu-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     color: #253238;
     position: relative;
     top: 3px;
@@ -416,15 +415,15 @@ a.photo-item {
 }
 
 .col-right-footer {
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .col-center-footer {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -465,7 +464,7 @@ a.photo-item {
 }
 
 .btn-calc-footer {
-    width: 360px;
+    width: 390px;
     height: 90px;
     background-color: #617e8c;
     color: #fff;
@@ -507,10 +506,6 @@ a.photo-item {
     justify-content: space-between;
 }
 
-.container-footer img {
-    width: 410px;
-}
-
 .row-footer {
     display: flex;
     justify-content: space-between;
@@ -536,6 +531,7 @@ a.photo-item {
 .footer-mail {
     text-align: center;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .fa-instagram-square,
@@ -547,8 +543,9 @@ a.photo-item {
 }
 
 .sun img {
+    display: block;
+    width: 390px;
     height: 90px;
-    width: 360px;
 }
 
 
@@ -921,10 +918,6 @@ a.photo-item {
 
 /* contacts */
 
-iframe {
-    margin-top: 10px;
-}
-
 .container-map {
     margin-bottom: 20px;
 }
@@ -1088,8 +1081,11 @@ span.warn {
 /* ---- гамбургер ---- */
 
 .navbar {
-    top: 200px;
-    z-index: 4;
+    z-index: 10;
+}
+
+.logo-top-navbar {
+    padding-top: 12px;
 }
 
 .container-navbar {
@@ -1105,8 +1101,8 @@ span.warn {
     left: 0;
     top: 0;
     width: 100%;
-    height: 75px;
-    background: #455B66;
+    height: 74px;
+    background: #617e8c;
 }
 
 .navbar__wrap {
@@ -1123,29 +1119,36 @@ span.warn {
     display: none;
 }
 
-.navbar__wrap .menu {
-    display: flex;
-}
-
-.navbar__wrap .menu>li {
-    display: flex;
-    align-items: stretch;
-}
-
-.navbar__wrap .menu>li>a {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.navbar__wrap .menu>li>a:hover {
-    color: rgba(255, 255, 255, 1);
-}
-
 .navbar {
     margin-bottom: 20px;
 }
+
+
+/* ---- адаптив ---- */
+
+
+/* Настройки под 3 разрешения:
+
+иногда до 575
+1) до 767
+2) до 991
+3) до 1200
+иногда от 1200 и выше
+
+(-sm-) (-md-) (-lg-)
+
+То, что я использую:
+1) до 767px 
+@media (max-width: 768px) {  ... }
+
+2) от 768px до 991px
+@media (min-width: 768px) {  ... }
+
+3) до 991px
+@media (max-width: 991px) {  ... }
+
+4) от 992px и выше (-lg-)
+@media (min-width: 992px) {  ... } */
 
 
 /* ---- media ---- */
@@ -1165,6 +1168,9 @@ span.warn {
     .container-products {
         margin-top: 100px;
     }
+    .container-map {
+        margin-top: 50px;
+    }
     .header {
         display: none;
     }
@@ -1179,54 +1185,20 @@ span.warn {
     .navbar {
         display: none;
     }
-    .logo img {
-        width: 140px;
+    .logo-top img {
+        width: 150px;
     }
     .menu-links {
         font-size: 16px;
-        top: 6px;
-    }
-}
-
-
-/* костыль для нормального расположения 
-темной подложки под изображением*/
-
-@media (max-width: 575px) {
-    .news::after {
-        width: 95%;
-    }
-}
-
-@media (min-width: 576px) {
-    .news::after {
-        width: 89%;
-    }
-}
-
-@media (min-width: 768px) {
-    .news::after {
-        width: 92%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .news::after {
-        width: 89%;
-    }
-}
-
-@media (min-width: 1400px) {
-    .news::after {
-        width: 91%;
+        top: 8px;
     }
 }
 
 
 /* стили мобильного меню 
-при размерах экрана до 992px */
+при размерах экрана до 991px */
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .navbar__wrap .menu {
         display: none;
     }
@@ -1242,7 +1214,7 @@ span.warn {
         display: block;
         width: 30px;
         height: 3px;
-        margin: 6px auto;
+        margin: 5px auto;
         background-color: #fff;
         transition: 0.2s;
     }
@@ -1250,7 +1222,7 @@ span.warn {
         position: fixed;
         top: 75px;
         left: -100%;
-        width: 100%;
+        width: 50%;
         height: 100%;
         background-color: #fff;
         z-index: 100;
@@ -1279,11 +1251,17 @@ span.warn {
         justify-content: center;
         padding: 20px 0;
         font-size: 20px;
-        font-weight: bold;
-        color: #3f3f3f;
+        font-weight: 400;
+        color: #253238;
+        text-transform: uppercase;
+    }
+    #menu .mail a {
+        text-transform: none;
     }
     .popup .menu>li>a:hover {
-        background-color: rgba(122, 82, 179, 0.1);
+        transition: all 0.3s ease-in-out;
+        background-color: #617e8c;
+        color: #fff;
     }
     .hamb__field.active .bar:nth-child(2) {
         opacity: 0;
@@ -1300,9 +1278,83 @@ span.warn {
 }
 
 
-/* 0 - 767px - xs, sm */
+/* костыль для нормального расположения 
+темной подложки под изображением*/
+
+@media (min-width: 0px) {
+    .news::after {
+        width: 95%;
+    }
+}
+
+@media (min-width: 576px) {
+    .news::after {
+        width: 89%;
+    }
+}
+
+@media (min-width: 768px) {
+    .news::after {
+        width: 92%;
+    }
+}
+
+@media (min-width: 992px) {
+    .news::after {
+        width: 88%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .news::after {
+        width: 89%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .news::after {
+        width: 91%;
+    }
+}
+
+
+/* от 0px xs */
+
+@media (min-width: 0px) {}
+
+
+/* от 576px sm */
+
+@media (min-width: 576px) {}
 
 @media (max-width: 991px) {
+    .col-contacts {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+
+
+/* до 991px - md */
+
+@media (max-width: 991px) {
+    .btn-calc-footer,
+    .sun img {
+        width: 100%;
+    }
+    .footer-contacts {
+        margin: 0px;
+    }
+    .footer-location,
+    .footer-tel,
+    .footer-mail {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .btn-calc-footer,
+    .sun img {
+        width: 100%;
+    }
     .news {
         margin-bottom: 10px;
     }
@@ -1321,9 +1373,6 @@ span.warn {
         margin-right: 5px;
         width: 50%;
     }
-    .sun img {
-        width: 100%;
-    }
     .btn-calc-footer {
         margin-top: 10px;
         margin-left: 5px;
@@ -1341,7 +1390,6 @@ span.warn {
     }
     .footer-contacts {
         display: flex;
-        font-size: 14px;
         align-items: center;
         justify-content: space-between;
         margin-left: 20px;
@@ -1353,8 +1401,42 @@ span.warn {
     }
 }
 
-@media (min-width: 768px) {
-    .footer-contacts {
+
+/* от 992px - lg */
+
+@media (min-width: 992px) {
+    .btn-calc-footer,
+    .sun img {
+        width: 270px;
+    }
+    .menu-links-footer {
         font-size: 16px;
+    }
+}
+
+
+/* от 1200px - xl */
+
+@media (min-width: 1200px) {
+    .btn-calc-footer,
+    .sun img {
+        width: 200px;
+    }
+    .btn-calc-footer,
+    .sun img {
+        width: 325px;
+    }
+    .col-right-footer {
+        margin-left: 15px;
+    }
+}
+
+
+/* от 1400px - xl */
+
+@media (min-width: 1400px) {
+    .btn-calc-footer,
+    .sun img {
+        width: 390px;
     }
 }

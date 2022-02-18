@@ -70,16 +70,17 @@ $grid-breakpoints: (
 (-sm-) (-md-) (-lg-)
 
 То, что я использую:
-1) до 768px 
+То, что я использую:
+1) до 767px 
 @media (max-width: 768px) {  ... }
 
-2) от 768px до 992px
+2) от 768px до 991px
 @media (min-width: 768px) {  ... }
 
-3) до 992px
-@media (max-width: 992px) {  ... }
+3) до 991px только для гамбургера
+@media (max-width: 991px) {  ... }
 
-3) от 992px и выше (-lg-)
+4) от 992px и выше (-lg-)
 @media (min-width: 992px) {  ... }
 
 
