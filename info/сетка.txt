@@ -62,7 +62,7 @@ $grid-breakpoints: (
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width
 
-Настройки под 2 разрешения:
+Настройки под 3 разрешения:
 до 767
 от 768 до 991
 от 992 и выше
