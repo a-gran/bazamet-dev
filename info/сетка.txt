@@ -67,12 +67,17 @@ $grid-breakpoints: (
 от 768 до 991
 от 992 и выше
 
-То, что я использую:
-1) до 767px (-sm-)
-@media (max-width: 767.98px) {  ... }
+(-sm-) (-md-) (-lg-)
 
-2) от 768px до 991.98px (-md-)
+То, что я использую:
+1) до 768px 
+@media (max-width: 768px) {  ... }
+
+2) от 768px до 992px
 @media (min-width: 768px) {  ... }
+
+3) до 992px
+@media (max-width: 992px) {  ... }
 
 3) от 992px и выше (-lg-)
 @media (min-width: 992px) {  ... }
