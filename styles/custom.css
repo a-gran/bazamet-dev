@@ -57,6 +57,15 @@ a {
 }
 
 
+/* отступы в строках */
+
+
+/* .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+} */
+
+
 /* ---- стили для шапки ---- */
 
 .about a,
@@ -310,6 +319,11 @@ marquee {
 .partner img {
     height: 100px;
     width: 100%;
+    transition: transform 0.5s;
+}
+
+.partner:hover img {
+    transform: scale(2);
 }
 
 .row-docs a {
@@ -912,7 +926,6 @@ iframe {
 }
 
 .container-map {
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -959,7 +972,7 @@ label {
     justify-content: center;
 }
 
-input {
+.checkbox input {
     position: relative;
     top: 1px;
 }
@@ -1149,11 +1162,17 @@ span.warn {
     .container-documents {
         display: none;
     }
+    .container-products {
+        margin-top: 100px;
+    }
+    .header {
+        display: none;
+    }
 }
 
 
 /* исчезновение гамбургера мобильного меню 
-при разрешении 993px и больше, переход 
+при разрешении 992px и больше, переход 
 на десктопную версию */
 
 @media (min-width: 992px) {
@@ -1161,20 +1180,11 @@ span.warn {
         display: none;
     }
     .logo img {
-        width: 150px;
+        width: 140px;
     }
     .menu-links {
         font-size: 16px;
         top: 6px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container-products {
-        margin-top: 100px;
-    }
-    .header {
-        display: none;
     }
 }
 

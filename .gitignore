@@ -2,16 +2,7 @@
 .idea/
 
 node_modules/
-fontawesome-free-5.15.4/
 
 archive/
-info/
-
-TODO.md
-tasks.md
 
 default.json
-
-*.txt
-*.zip
-*.pdf
