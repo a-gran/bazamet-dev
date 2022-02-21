@@ -52,6 +52,11 @@ a {
     color: inherit;
 }
 
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 /* стандартные отступы bootstrap в строках */
 
@@ -233,7 +238,7 @@ marquee {
     letter-spacing: 0.1em;
     font-style: italic;
     background-color: #fff;
-    opacity: 0.5;
+    opacity: 0.9;
     border-radius: 10px;
     padding: 20px;
 }
@@ -247,6 +252,7 @@ marquee {
 .container-slider img {
     height: 400px;
     width: 100%;
+    object-fit: cover;
 }
 
 .product>h3 {
@@ -318,7 +324,7 @@ marquee {
 }
 
 .partner:hover img {
-    transform: scale(2);
+    transform: scale(1.2);
 }
 
 .row-docs a {
@@ -646,6 +652,11 @@ a.photo-item {
     transition: all 0.5s ease-in-out;
 }
 
+.container-content-news ul {
+    padding-left: 35px;
+    margin-bottom: 1rem;
+}
+
 
 /* page catalog */
 
@@ -663,6 +674,11 @@ a.photo-item {
 .breadcrumb li:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.breadcrumb li:last-child:hover {
+    cursor: unset;
+    text-decoration: none;
 }
 
 .row-catalog li::before,
@@ -701,6 +717,11 @@ a.photo-item {
 }
 
 
+/* .price-cost-availability {
+    text-align: left;
+} */
+
+
 /* page helper справочник */
 
 .left-dropmenu li {
@@ -735,15 +756,17 @@ a.photo-item {
 
 .left-dropmenu-items li {
     width: 270px;
-    height: 40px;
-    background-color: #B0BFC6;
+    height: auto;
+    background-color: #b0bfc6;
     text-transform: lowercase;
     margin-bottom: 5px;
     text-align: left;
     padding-left: 12px;
-    line-height: 36px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     color: #000;
     margin-left: 40px;
+    line-height: 1.1;
 }
 
 .left-dropmenu-items li:hover {
@@ -880,6 +903,7 @@ a.photo-item {
 .row-heading-product img {
     height: 100px;
     width: 100%;
+    object-fit: cover;
 }
 
 .row-heading-product {
@@ -898,7 +922,8 @@ a.photo-item {
 
 .row-product-content img {
     width: 100%;
-    max-height: 500px;
+    height: 50vh;
+    object-fit: cover;
 }
 
 .large-text {
@@ -996,6 +1021,10 @@ label {
     transition: all 0.3s ease-in-out;
 }
 
+.telefons li {
+    list-style: none;
+}
+
 .timework {
     margin-top: 30px;
 }
@@ -1009,8 +1038,7 @@ label {
 }
 
 .row-heading-productCategory {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -1061,20 +1089,18 @@ span.warn {
     text-align: center;
 }
 
-.price-item-img img {
-    height: 100%;
-    width: 100%;
-}
-
 .row-price-item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
 }
 
-.row-price-heading>div {
+.price-cost-name {
     text-align: center;
+}
+
+.row-price-heading>div.price-cost-availability {
+    text-align: left;
 }
 
 
@@ -1202,6 +1228,10 @@ span.warn {
 при размерах экрана до 991px */
 
 @media (max-width: 991px) {
+    .breadcrumb {
+        margin-top: 80px;
+        font-size: 14px;
+    }
     .navbar__wrap .menu {
         display: none;
     }
@@ -1225,7 +1255,7 @@ span.warn {
         position: fixed;
         top: 75px;
         left: -100%;
-        width: 50%;
+        width: 100%;
         height: 100%;
         background-color: #fff;
         z-index: 100;
@@ -1318,11 +1348,21 @@ span.warn {
     .news::after {
         width: 89%;
     }
+    .row-product-content {
+        margin-left: 20px;
+    }
+    .product-text {
+        margin-left: 40px;
+    }
 }
 
 @media (min-width: 1400px) {
     .news::after {
         width: 91%;
+    }
+    .row-product-content,
+    .product-text {
+        margin-left: 0;
     }
 }
 
@@ -1344,7 +1384,35 @@ span.warn {
 }
 
 
-/* до 991px - md */
+/* до 320px */
+
+@media (max-width: 320px) {
+    .row-heading-productCategory h1 {
+        font-size: 16px;
+        line-height: 60px;
+    }
+    .row-heading-productCategory {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .row-heading-productCategory img {
+        height: 60px;
+    }
+    .all-products-pages div {
+        font-size: 16px;
+    }
+    span.warn {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px
+    }
+    .row-price-heading {
+        font-size: 16px;
+    }
+}
+
+
+/* до 991px */
 
 @media (max-width: 991px) {
     .btn-calc-footer,
@@ -1447,5 +1515,129 @@ span.warn {
     .btn-calc-footer,
     .sun img {
         width: 390px;
+    }
+}
+
+
+/* стили фильтров */
+
+.mse2_number_inputs label {
+    margin-right: 10px;
+}
+
+
+/* -------------------- */
+
+.price-item-img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ---- price ---- */
+
+@media (max-width: 320px) {
+    .row-price-heading {
+        display: none;
+    }
+    .pagination>li.page-item.page-item-first,
+    .pagination>li.page-item.page-item-last {
+        display: none;
+    }
+    .price-cost {
+        text-align: center;
+        flex-direction: column;
+    }
+    .price-and-cost .in-stock {
+        text-align: center;
+    }
+    .nameOfProductAndImg {
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .nameOfProduct {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .nameOfProductAndImg img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 991px) {
+    .row-price-heading {
+        display: none;
+    }
+    .pagination>li.page-item.page-item-first,
+    .pagination>li.page-item.page-item-last {
+        display: none;
+    }
+    .container-productCategory {
+        flex-direction: column;
+    }
+    .all-pages {
+        display: flex;
+    }
+    .row-heading-productCategory {
+        margin-bottom: 5px;
+    }
+    .nameOfProductAndImg,
+    .price-and-cost {
+        font-size: 16px;
+    }
+    .nameOfProductAndImg {
+        align-items: center;
+    }
+    .nameOfProductAndImg img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+    .price-item-img {
+        text-align: center;
+    }
+    .price-cost {
+        text-align: center;
+        flex-direction: column;
+    }
+    .nameOfProduct {
+        text-align: center;
+    }
+    .price-and-cost {
+        align-items: center;
+    }
+    .price-and-cost .in-stock {
+        text-align: center;
+    }
+}
+
+@media (min-width: 991px) {
+    .nameOfProductAndImg {
+        align-items: center;
+    }
+    .nameOfProductAndImg img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+    .price-item-img {
+        text-align: center;
+    }
+    .price-cost {
+        text-align: center;
+        flex-direction: column;
+    }
+    .nameOfProduct {
+        text-align: center;
+    }
+    .price-and-cost {
+        align-items: center;
+    }
+    .price-and-cost .in-stock {
+        text-align: center;
     }
 }

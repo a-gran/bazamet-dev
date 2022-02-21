@@ -30,22 +30,19 @@
 
     <section class="container">
         <div class="row row-heading-productCategory">
-            <h1>Медь</h1>
+            <h1>Лист медный</h1>
             <img src="images/news/prutm3_002.jpg" alt="news">
         </div>
     </section>
 
     <section class="container d-flex container-productCategory">
-        <div class="col-3">
+        <div class="col-12 col-lg-3">
             <!-- фильтры -->
         </div>
 
-        <div class="container container-productCategory-content">
+        <div class="col-12 col-lg-9 productCategory-content">
             <div class="row row-heading-productCategory">
-                <div class="col-12">
-                    <h2>Лист медный</h2>
-                </div>
-                <div class="col-12 all-products-pages">
+                <div class="all-products-pages">
                     <div class="all-products">
                         <span>Всего товаров:</span>
                         <span>1</span>
@@ -61,66 +58,42 @@
                 </div>
             </div>
 
-            <div class="row row-top-pagination">
-                <nav aria-label="...">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#">
-                                Первая</a>
-                        </li>
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#">
-                                <<</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active" aria-current="page">
-                            <span class="page-link">
-                                2<span class="sr-only">(current)</span>
-                            </span>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">>></a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">
-                                Последняя</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
             <div class="row">
                 <span class="warn">
                     Идет обновление каталога!<br>Цены и наличие уточняйте у наших специалистов!
                 </span>
             </div>
             <div class="row row-price-heading">
-                <div class="col-6 price-item-name">Наименование</div>
-                <div class="col-4 price-cost-name">Цена</div>
+                <div class="col-2 price-item-name">Фото</div>
+                <div class="col-4 price-item-name">Наименование</div>
                 <div class="col-2 price-cost-availability">Наличие</div>
+                <div class="col-4 price-cost-name">Цена</div>
+
             </div>
             <hr>
             <div class="row row-price-item">
-                <div class="col-1 price-item-img">
-                    <img src="/images/products/copper.jpg" alt="copper">
+                <div class="col-12 col-sm-6 d-flex nameOfProductAndImg">
+                    <div class="col-4 price-item-img">
+                        <img src="/images/products/copper.jpg" alt="copper">
+                    </div>
+                    <div class="col-8 nameOfProduct">Лист медный М1 10,0 мм</div>
                 </div>
-                <div class="col-5">Лист медный М1 10,0 мм</div>
-                <div class="col-4 price-cost">
-                    <span>1400 руб/кг</span>
-                    <span>(1 шт ~ 80,1 кг)</span>
+                <div class="col-12 col-sm-6 d-flex price-and-cost">
+                    <div class="col-4 in-stock">
+                        <span>в наличии</span>
+                    </div>
+                    <div class="col-8 d-flex price-cost">
+                        <span>1400 руб/кг</span>
+                        <span>(1 шт ~ 80,1 кг)</span>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <span>в наличии</span>
-                </div>
-
             </div>
             <hr>
 
             <div class="row row-bottom-pagination">
-                <nav aria-label="...">
+                <nav class="pagin">
                     <ul class="pagination">
-                        <li class="page-item">
+                        <li class="page-item page-item-first">
                             <a class="page-link" href="#">
                                 Первая</a>
                         </li>
@@ -138,7 +111,7 @@
                         <li class="page-item">
                             <a class="page-link" href="#">>></a>
                         </li>
-                        <li class="page-item">
+                        <li class="page-item page-item-last">
                             <a class="page-link" href="#">
                                 Последняя</a>
                         </li>
