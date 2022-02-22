@@ -83,6 +83,11 @@ hr {
     height: 30px;
 }
 
+.logo-top a img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .news-links {
     display: flex;
     justify-content: space-between;
@@ -732,11 +737,6 @@ a.photo-item {
 }
 
 
-/* .price-cost-availability {
-    text-align: left;
-} */
-
-
 /* page helper справочник */
 
 .left-dropmenu li {
@@ -1121,7 +1121,7 @@ span.warn {
 }
 
 .row-price-heading>div.price-cost-availability {
-    text-align: left;
+    text-align: center;
 }
 
 .row-pagination {
@@ -1131,7 +1131,7 @@ span.warn {
 
 /* ---- гамбургер ---- */
 
-.navbar {
+.navbar-main {
     z-index: 10;
 }
 
@@ -1147,7 +1147,7 @@ span.warn {
     padding: 0 15px;
 }
 
-.navbar {
+.navbar-main {
     position: fixed;
     left: 0;
     top: 0;
@@ -1170,7 +1170,7 @@ span.warn {
     display: none;
 }
 
-.navbar {
+.navbar-main {
     margin-bottom: 20px;
 }
 
@@ -1236,7 +1236,7 @@ span.warn {
 на десктопную версию */
 
 @media (min-width: 992px) {
-    .navbar {
+    .navbar-main {
         display: none;
     }
     .logo-top img {}
@@ -1565,8 +1565,8 @@ button[type=reset]:hover {
     .row-price-heading {
         display: none;
     }
-    .pagination>li.page-item.page-item-first,
-    .pagination>li.page-item.page-item-last {
+    .row.pagination>li.page-item.page-item-first,
+    .row.pagination>li.page-item.page-item-last {
         display: none;
     }
     .price-cost {
