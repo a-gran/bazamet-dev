@@ -1309,7 +1309,6 @@ button[type='reset']:hover {
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        padding: 50px 0;
         overflow: auto;
     }
     .popup .menu>li {
@@ -1485,6 +1484,9 @@ button[type='reset']:hover {
     }
     .row-price-heading {
         font-size: 16px;
+    }
+    .popup {
+        width: 75%;
     }
 }
 
@@ -1852,7 +1854,7 @@ button[type=reset]:hover {
         left: 0;
     }
     .popupFilter .menuFilter {
-        width: 70%;
+        width: 73%;
         height: 100%;
         padding: 0px;
     }
