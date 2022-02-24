@@ -14,10 +14,26 @@
 </head>
 
 <body>
+    <!-- ----------- modal window for filters ----------- -->
+    <nav class="navbar-main">
+        <div class="navbar-container-main">
+            <div class="navbar__wrap">
+                <div class="modalBtnFilter">
+                    <div class="modalBtnFilter__field" id="modalBtnFilter">
+                        <span class="btn-filter">Подбор по фильтрам</span>
+                    </div>
+                </div>
+                <ul class="menuFilter" id="menuFilter">
+                    <div class="col-filtermenu"></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="popupFilter" id="popupFilter"></div>
     <!-- ----------- бургер ----------- -->
     <nav class="navbar-main">
         <div class="container-navbar">
-            <div class="navbar__wrap">
+            <div class="navbar__wrap-container">
                 <div class="hamb">
                     <div class="hamb__field" id="hamb">
                         <span class="bar"></span>
@@ -55,7 +71,7 @@
         </div>
     </nav>
     <div class="popup" id="popup"></div>
-    <!-- ------------------------------------------------ -->
+    <!-- --------------- header ------------------------- -->
     <section class="header">
         <div class="container top-header">
             <div class="row row-top-header">
