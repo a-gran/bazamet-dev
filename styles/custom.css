@@ -271,6 +271,8 @@ marquee {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    background: #0000006b;
+    width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -295,12 +297,6 @@ marquee {
 
 .new:last-child {
     margin-right: 0px;
-}
-
-.heading-news {
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
 }
 
 .header {
@@ -390,18 +386,6 @@ a.photo-item {
 
 
 /* позиционирование заголовка посередине карточки */
-
-.product>h3 {
-    color: #fff;
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    background: #0000006b;
-    width: 100%;
-}
 
 .row-photo-items a {
     display: block;
@@ -523,13 +507,13 @@ a.photo-item {
 .menu-links-footer a {
     color: black;
     text-decoration: none;
-    text-transform: uppercase;
     font-family: headerFont;
 }
 
 .soc-icons {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .row-footer {
@@ -570,7 +554,7 @@ a.photo-item {
 
 .sun img {
     display: block;
-    width: 390px;
+    width: auto;
     height: 90px;
 }
 
@@ -602,6 +586,8 @@ a.photo-item {
 .heading-news {
     position: absolute;
     top: 0px;
+    left: 20px;
+    right: 20px;
     color: #fff;
     font-size: 16px;
     text-align: center;
@@ -1136,7 +1122,8 @@ span.warn {
 }
 
 .logo-top-navbar {
-    padding-top: 12px;
+    padding-top: 23px;
+    padding-right: 33px;
 }
 
 .container-navbar {
@@ -1175,41 +1162,69 @@ span.warn {
 }
 
 
-/* ---- адаптив ---- */
-
-
-/* Настройки под 3 разрешения:
-
-иногда до 575
-1) до 767
-2) до 991
-3) до 1200
-иногда от 1200 и выше
-
-(-sm-) (-md-) (-lg-)
-
-То, что я использую:
-1) до 767px 
-@media (max-width: 768px) {  ... }
-
-2) от 768px до 991px
-@media (min-width: 768px) {  ... }
-
-3) до 991px
-@media (max-width: 991px) {  ... }
-
-4) от 992px и выше (-lg-)
-@media (min-width: 992px) {  ... } */
-
-
 /* ---- media ---- */
 
 
-/* исчезновение нескольких блоков и появление 
-гамбургера мобильного меню при разрешении 992px 
-и меньше, переход на мобильную версию */
+/* до 320px */
+
+@media (max-width: 320px) {
+    .btn-calc-footer {
+        margin-left: 0px;
+        width: 100%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .menu-links-footer {
+        font-size: 14px;
+    }
+    .row-heading-productCategory h1 {
+        font-size: 16px;
+        line-height: 60px;
+    }
+    .row-heading-productCategory {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .row-heading-productCategory img {
+        height: 60px;
+    }
+    .all-products-pages div {
+        font-size: 16px;
+    }
+    span.warn {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px
+    }
+    .row-price-heading {
+        font-size: 16px;
+    }
+}
+
+
+/* от 576px sm */
+
+@media (min-width: 576px) {
+    .col-right-footer {
+        flex-direction: row;
+    }
+    .sun {
+        margin-top: 10px;
+        margin-right: 5px;
+        width: 50%;
+    }
+    .btn-calc-footer {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 50%;
+    }
+}
 
 @media (max-width: 991px) {
+    /* исчезновение нескольких блоков и появление 
+    гамбургера мобильного меню при разрешении 992px 
+    и меньше, переход на мобильную версию */
     .container-slider,
     .container-gallery,
     .container-partners,
@@ -1228,33 +1243,7 @@ span.warn {
     .col-dropmenu {
         display: none;
     }
-}
-
-
-/* исчезновение гамбургера мобильного меню 
-при разрешении 992px и больше, переход 
-на десктопную версию */
-
-@media (min-width: 992px) {
-    .navbar-main {
-        display: none;
-    }
-    .logo-top img {}
-    .menu-links {
-        font-size: 16px;
-        top: 8px;
-    }
-}
-
-
-/* стили мобильного меню 
-при размерах экрана до 991px */
-
-@media (max-width: 991px) {
-    .breadcrumb {
-        margin-top: 80px;
-        font-size: 14px;
-    }
+    /* ---- стили popup ---- */
     .navbar__wrap .menu {
         display: none;
     }
@@ -1337,57 +1326,16 @@ span.warn {
     body.noscroll {
         overflow: hidden;
     }
-}
-
-
-/* от 0px xs */
-
-@media (min-width: 0px) {}
-
-
-/* от 576px sm */
-
-@media (min-width: 576px) {}
-
-@media (max-width: 991px) {
+    /* стили мобильного меню 
+    при размерах экрана до 991px */
+    .breadcrumb {
+        margin-top: 80px;
+        font-size: 14px;
+    }
     .col-contacts {
         font-size: 14px;
         line-height: 1.2;
     }
-}
-
-
-/* до 320px */
-
-@media (max-width: 320px) {
-    .row-heading-productCategory h1 {
-        font-size: 16px;
-        line-height: 60px;
-    }
-    .row-heading-productCategory {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .row-heading-productCategory img {
-        height: 60px;
-    }
-    .all-products-pages div {
-        font-size: 16px;
-    }
-    span.warn {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px
-    }
-    .row-price-heading {
-        font-size: 16px;
-    }
-}
-
-
-/* до 991px */
-
-@media (max-width: 991px) {
     .btn-calc-footer,
     .sun img {
         width: 100%;
@@ -1400,10 +1348,6 @@ span.warn {
     .footer-mail {
         margin-bottom: 10px;
         font-size: 14px;
-    }
-    .btn-calc-footer,
-    .sun img {
-        width: 100%;
     }
     .news {
         margin-bottom: 10px;
@@ -1418,22 +1362,8 @@ span.warn {
         padding: 0px;
         margin-top: 10px;
     }
-    .sun {
-        margin-top: 10px;
-        margin-right: 5px;
-        width: 50%;
-    }
-    .btn-calc-footer {
-        margin-top: 10px;
-        margin-left: 5px;
-        width: 50%;
-    }
     .serch-bottom {
         margin-top: 30px;
-    }
-    .col-right-footer {
-        align-items: center;
-        flex-direction: row;
     }
     .logo-footer {
         text-align: center;
@@ -1451,16 +1381,31 @@ span.warn {
     }
 }
 
-
-/* от 992px - lg */
-
 @media (min-width: 992px) {
+    /* исчезновение гамбургера мобильного меню 
+    при разрешении 992px и больше, переход 
+    на десктопную версию */
+    .navbar-main {
+        display: none;
+    }
+    .logo-top img {}
+    .menu-links {
+        font-size: 16px;
+        top: 8px;
+    }
+    /* от 992px - lg */
+    .col-right-footer {
+        flex-direction: column;
+    }
     .btn-calc-footer,
     .sun img {
         width: 270px;
     }
     .menu-links-footer {
-        font-size: 16px;
+        font-size: 20px;
+    }
+    .sun {
+        margin-top: 0px;
     }
 }
 
@@ -1551,15 +1496,12 @@ button[type=reset]:hover {
 }
 
 
-/* -------------------- */
+/* ---- price ---- */
 
 .price-item-img img {
     height: 100%;
     width: 100%;
 }
-
-
-/* ---- price ---- */
 
 @media (max-width: 320px) {
     .row-price-heading {
@@ -1671,7 +1613,13 @@ button[type=reset]:hover {
 /* костыль для нормального расположения 
 темной подложки под изображением*/
 
-@media (min-width: 0px) {
+@media (max-width: 380px) {
+    .news::after {
+        width: 91%;
+    }
+}
+
+@media (min-width: 380px) {
     .news::after {
         width: 95%;
     }
