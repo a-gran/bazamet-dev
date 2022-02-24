@@ -1164,60 +1164,9 @@ span.warn {
 
 /* ---- media ---- */
 
-
-/* до 320px */
-
-@media (max-width: 320px) {
-    .btn-calc-footer {
-        margin-left: 0px;
-        width: 100%;
-    }
-    h1 {
-        font-size: 20px;
-    }
-    .menu-links-footer {
+@media (max-width: 1199px) {
+    .heading-news {
         font-size: 14px;
-    }
-    .row-heading-productCategory h1 {
-        font-size: 16px;
-        line-height: 60px;
-    }
-    .row-heading-productCategory {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .row-heading-productCategory img {
-        height: 60px;
-    }
-    .all-products-pages div {
-        font-size: 16px;
-    }
-    span.warn {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px
-    }
-    .row-price-heading {
-        font-size: 16px;
-    }
-}
-
-
-/* от 576px sm */
-
-@media (min-width: 576px) {
-    .col-right-footer {
-        flex-direction: row;
-    }
-    .sun {
-        margin-top: 10px;
-        margin-right: 5px;
-        width: 50%;
-    }
-    .btn-calc-footer {
-        margin-top: 10px;
-        margin-left: 5px;
-        width: 50%;
     }
 }
 
@@ -1326,8 +1275,10 @@ span.warn {
     body.noscroll {
         overflow: hidden;
     }
-    /* стили мобильного меню 
-    при размерах экрана до 991px */
+    /* стили до 991px */
+    .heading-news {
+        font-size: 16px;
+    }
     .breadcrumb {
         margin-top: 80px;
         font-size: 14px;
@@ -1339,9 +1290,6 @@ span.warn {
     .btn-calc-footer,
     .sun img {
         width: 100%;
-    }
-    .footer-contacts {
-        margin: 0px;
     }
     .footer-location,
     .footer-tel,
@@ -1379,6 +1327,110 @@ span.warn {
         margin-left: 20px;
         margin-right: 20px;
     }
+    .footer-location,
+    .footer-tel,
+    .footer-mail {
+        font-size: 20px;
+    }
+}
+
+
+/* до 767px */
+
+@media (max-width: 767px) {
+    .footer-location,
+    .footer-tel,
+    .footer-mail {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .footer-contacts {
+        display: flex;
+    }
+    .footer-location,
+    .footer-tel,
+    .footer-mail {
+        font-size: 14px;
+    }
+}
+
+
+/* до 575px */
+
+@media (max-width: 575px) {
+    .footer-contacts {
+        display: block;
+    }
+    .footer-location,
+    .footer-tel,
+    .footer-mail {
+        font-size: 16px;
+    }
+}
+
+
+/* до 320px */
+
+@media (max-width: 320px) {
+    .logo-top-navbar {
+        padding-right: 40px;
+    }
+    .footer-contacts {
+        display: block;
+    }
+    .btn-calc-footer {
+        margin-left: 0px;
+        width: 100%;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .menu-links-footer {
+        font-size: 14px;
+    }
+    .row-heading-productCategory h1 {
+        font-size: 16px;
+        line-height: 60px;
+    }
+    .row-heading-productCategory {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .row-heading-productCategory img {
+        height: 60px;
+    }
+    .all-products-pages div {
+        font-size: 16px;
+    }
+    span.warn {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px
+    }
+    .row-price-heading {
+        font-size: 16px;
+    }
+}
+
+
+/* от 576px sm */
+
+@media (min-width: 576px) {
+    .col-right-footer {
+        flex-direction: row;
+    }
+    .sun {
+        margin-top: 10px;
+        margin-right: 5px;
+        width: 50%;
+    }
+    .btn-calc-footer {
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 50%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1388,9 +1440,11 @@ span.warn {
     .navbar-main {
         display: none;
     }
-    .logo-top img {}
+    .menu-links>a {
+        padding-right: 10px;
+    }
     .menu-links {
-        font-size: 16px;
+        font-size: 12px;
         top: 8px;
     }
     /* от 992px - lg */
