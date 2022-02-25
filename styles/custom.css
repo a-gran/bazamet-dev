@@ -25,7 +25,7 @@ h3 {
     font-family: headerFont;
     text-transform: uppercase;
     text-align: center;
-    color: #253238;
+    color: #212a33;
 }
 
 ol,
@@ -33,6 +33,10 @@ ul,
 li {
     padding: 0;
     margin: 0;
+}
+
+li {
+    list-style: none;
 }
 
 h1 {
@@ -71,7 +75,7 @@ hr {
 .news a,
 .container-footer a {
     text-decoration: none;
-    color: #253238;
+    color: #212a33;
 }
 
 .about h3 {
@@ -102,11 +106,11 @@ hr {
 /* ------------- форма поиска ------------ */
 
 input[type='text'] {
-    border: 2px solid #617e8c;
+    border: 2px solid #658497;
     outline: none;
     height: 30px;
     width: 100%;
-    color: #253238;
+    color: #212a33;
     font-size: 16px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -114,7 +118,7 @@ input[type='text'] {
 
 .search {
     display: flex;
-    background-color: #617e8c;
+    background-color: #658497;
     border-radius: 3px;
 }
 
@@ -128,7 +132,7 @@ input[type='text'] {
 }
 
 .menu-links>a {
-    color: #253238;
+    color: #212a33;
     text-decoration: none;
     padding-right: 20px;
     text-transform: uppercase;
@@ -138,7 +142,7 @@ input[type='text'] {
 .menu-links {
     display: flex;
     justify-content: center;
-    color: #253238;
+    color: #212a33;
     position: relative;
     top: 3px;
 }
@@ -156,7 +160,7 @@ input[type='text'] {
 .fa-map-marker-alt,
 .fa-phone-volume {
     font-size: 20px;
-    color: #617e8c;
+    color: #658497;
 }
 
 .fa-whatsapp {
@@ -166,7 +170,7 @@ input[type='text'] {
 .top-header-contacts {
     display: flex;
     flex-direction: column;
-    color: #253238;
+    color: #212a33;
 }
 
 .tel>a,
@@ -174,7 +178,7 @@ input[type='text'] {
 .footer-location a,
 .footer-tel a,
 .footer-mail a {
-    color: #253238;
+    color: #212a33;
     font-family: headerFont;
     text-decoration: none;
 }
@@ -201,13 +205,13 @@ input[type='text'] {
 }
 
 .container-about a:hover {
-    color: #617e8c;
+    color: #658497;
     text-decoration: underline;
     transition: all 0.5s ease-in-out;
 }
 
 .ticker {
-    background-color: #617e8c;
+    background-color: #779eca;
     height: 40px;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -233,17 +237,16 @@ marquee {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
 }
 
 .slide-content {
     text-align: center;
-    color: #000;
+    color: #3f5870;
     font-size: 42px;
     background-color: #fff;
     opacity: 0.7;
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .slide-content:hover {
@@ -263,7 +266,7 @@ marquee {
     object-fit: cover;
 }
 
-.product>h3 {
+.product>a>h3 {
     color: #fff;
     z-index: 2;
     position: absolute;
@@ -271,10 +274,19 @@ marquee {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    background: #0000006b;
+    background: rgba(67, 75, 77, 0.5);
     width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.product>a {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 
@@ -371,15 +383,6 @@ a.photo-item {
 
 /* блок product, как ссылка */
 
-.product>a {
-    z-index: 1;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
 .product a:hover {
     color: #fff;
 }
@@ -404,7 +407,7 @@ a.photo-item {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(78, 93, 105, 0.1);
 }
 
 .product:hover {
@@ -447,7 +450,7 @@ a.photo-item {
 
 .top-header-calc {
     width: 200px;
-    background-color: #617e8c;
+    background-color: #779eca;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -462,7 +465,7 @@ a.photo-item {
 
 .top-header-calc:hover,
 .btn-calc-footer:hover {
-    background-color: #455b66;
+    background-color: #3f5870;
     transition: all 0.5s ease-out;
 }
 
@@ -476,7 +479,7 @@ a.photo-item {
 .btn-calc-footer {
     width: 390px;
     height: 90px;
-    background-color: #617e8c;
+    background-color: #779eca;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -505,7 +508,7 @@ a.photo-item {
 }
 
 .menu-links-footer a {
-    color: black;
+    color: #000;
     text-decoration: none;
     font-family: headerFont;
 }
@@ -549,7 +552,15 @@ a.photo-item {
 .fa-vk,
 .fa-facebook-square {
     font-size: 64px;
-    color: #617e8c;
+    color: #779eca;
+}
+
+.fa-instagram-square:hover,
+.fa-youtube-square:hover,
+.fa-vk:hover,
+.fa-facebook-square:hover {
+    transition: all 0.5s ease-in-out;
+    color: #658497;
 }
 
 .sun img {
@@ -659,7 +670,6 @@ a.photo-item {
 }
 
 .container-content-news ul {
-    padding-left: 35px;
     margin-bottom: 1rem;
 }
 
@@ -669,12 +679,12 @@ a.photo-item {
 .breadcrumb-item a,
 .breadcrumb-item {
     text-decoration: none;
-    color: #455B66;
+    color: #3f5870;
     text-transform: uppercase;
 }
 
 .breadcrumb-item.active {
-    color: #253238;
+    color: #212a33;
 }
 
 .breadcrumb li:hover {
@@ -692,7 +702,7 @@ a.photo-item {
     content: '';
     display: inline-block;
     border-top: 5px solid transparent;
-    border-left: 10px solid #455b66;
+    border-left: 10px solid #3f5870;
     border-bottom: 5px solid transparent;
     margin-right: 10px;
     margin-bottom: 2px;
@@ -728,7 +738,7 @@ a.photo-item {
 .left-dropmenu li {
     width: 310px;
     height: 60px;
-    background-color: #90a4af;
+    background-color: #3f5870;
     margin-bottom: 10px;
     text-align: left;
     padding-left: 20px;
@@ -736,11 +746,6 @@ a.photo-item {
     line-height: 60px;
     color: #fff;
     list-style: none;
-}
-
-.left-dropmenu li:hover {
-    color: #000;
-    transition: all 0.5s ease-in-out;
 }
 
 .left-dropmenu li a:hover {
@@ -758,20 +763,23 @@ a.photo-item {
 .left-dropmenu-items li {
     width: 270px;
     height: auto;
-    background-color: #b0bfc6;
+    background-color: #779eca;
     text-transform: lowercase;
     margin-bottom: 5px;
     text-align: left;
     padding-left: 12px;
     padding-top: 7px;
     padding-bottom: 7px;
-    color: #000;
+    color: #fff;
     margin-left: 40px;
     line-height: 1.1;
 }
 
-.left-dropmenu-items li:hover {
-    transition: all 0.5s ease-in-out;
+.left-dropmenu li a,
+.left-dropmenu-items li a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .left-dropmenu-items li:last-child {
@@ -826,12 +834,12 @@ a.photo-item {
 
 .row-more-news-sample a {
     text-decoration: none;
-    color: #455B66;
+    color: #3f5870;
 }
 
 .row-more-news-sample a:hover,
 .row-heading-news-sample h2 a:hover {
-    color: #253238;
+    color: #212a33;
     transition: all 0.5s ease-in-out;
     text-decoration: underline;
 }
@@ -956,24 +964,24 @@ a.photo-item {
     margin-top: 15px;
     width: 100%;
     margin-bottom: 10px;
-    background-color: #617e8c;
-    border: solid 2px #617e8c;
+    background-color: #658497;
+    border: solid 2px #658497;
 }
 
 .form-control {
     border-radius: 3px;
-    border: solid 2px #617e8c;
+    border: solid 2px #658497;
 }
 
 .form-control:focus,
 .btn-primary:focus {
     box-shadow: none;
-    border-color: #455b66;
+    border-color: #3f5870;
 }
 
 .btn-primary:hover {
-    background-color: #455b66;
-    border-color: #455b66;
+    background-color: #3f5870;
+    border-color: #3f5870;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1128,7 +1136,7 @@ span.warn {
     top: 0;
     width: 100%;
     height: 74px;
-    background: #617e8c;
+    background: #658497;
     z-index: 10;
 }
 
@@ -1137,7 +1145,7 @@ span.warn {
     top: 10px;
     width: 100%;
     height: 50px;
-    background: #617e8c;
+    background: #658497;
     z-index: 10;
     text-align: center;
 }
@@ -1223,16 +1231,36 @@ button[type='reset'] {
     margin-top: 40px;
     margin-bottom: 20px;
     color: #fff;
-    background-color: #617e8c;
+    background-color: #658497;
 }
 
 button[type='reset']:hover {
-    background-color: #455b66;
+    background-color: #3f5870;
     color: #fff;
 }
 
 .container-productCategory>.row {
     margin-bottom: 20px;
+}
+
+
+/* кнопка */
+
+.btn_more {
+    color: #fff;
+    background-color: #658497;
+    border: none;
+    outline: none;
+}
+
+.btn_more:hover {
+    background-color: #3f5870;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_more:focus {
+    box-shadow: none;
 }
 
 
@@ -1321,7 +1349,7 @@ button[type='reset']:hover {
         padding: 20px 0;
         font-size: 20px;
         font-weight: 400;
-        color: #253238;
+        color: #212a33;
         text-transform: uppercase;
     }
     #menu .mail a {
@@ -1335,7 +1363,7 @@ button[type='reset']:hover {
     }
     .popup .menu>li>a:hover {
         transition: all 0.3s ease-in-out;
-        background-color: #617e8c;
+        background-color: #658497;
         color: #fff;
     }
     .hamb__field.active .bar:nth-child(2) {
@@ -1469,7 +1497,6 @@ button[type='reset']:hover {
     }
     .row-heading-productCategory {
         margin-top: 0;
-        margin-bottom: 0;
     }
     .row-heading-productCategory img {
         height: 60px;
@@ -1619,11 +1646,11 @@ button[type=reset] {
     margin-top: 40px;
     margin-bottom: 20px;
     color: #fff;
-    background-color: #617e8c;
+    background-color: #658497;
 }
 
 button[type=reset]:hover {
-    background-color: #455b66;
+    background-color: #3f5870;
     color: #fff;
 }
 
@@ -1841,7 +1868,7 @@ button[type=reset]:hover {
     }
     .popupFilter {
         position: fixed;
-        top: 268px;
+        top: 262px;
         left: -100%;
         width: 100%;
         height: 100%;
