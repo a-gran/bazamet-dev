@@ -216,6 +216,10 @@ input[type='text'] {
     margin-top: 20px;
     margin-bottom: 15px;
     color: #fff;
+    background: #285B93;
+    background: -webkit-radial-gradient(top left, #285B93, #2166B4);
+    background: -moz-radial-gradient(top left, #285B93, #2166B4);
+    background: radial-gradient(to bottom right, #285B93, #2166B4);
 }
 
 marquee {
@@ -241,12 +245,13 @@ marquee {
 
 .slide-content {
     text-align: center;
-    color: #3f5870;
-    font-size: 42px;
+    color: #000;
+    font-size: 38px;
     background-color: #fff;
-    opacity: 0.7;
-    border-radius: 5px;
+    opacity: 0.9;
     padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .slide-content:hover {
@@ -450,7 +455,7 @@ a.photo-item {
 
 .top-header-calc {
     width: 200px;
-    background-color: #779eca;
+    background-color: #285a93;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -479,7 +484,7 @@ a.photo-item {
 .btn-calc-footer {
     width: 390px;
     height: 90px;
-    background-color: #779eca;
+    background-color: #285a93;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -502,7 +507,7 @@ a.photo-item {
 
 .menu-links-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -552,7 +557,7 @@ a.photo-item {
 .fa-vk,
 .fa-facebook-square {
     font-size: 64px;
-    color: #779eca;
+    color: #285a93;
 }
 
 .fa-instagram-square:hover,
@@ -560,7 +565,7 @@ a.photo-item {
 .fa-vk:hover,
 .fa-facebook-square:hover {
     transition: all 0.5s ease-in-out;
-    color: #658497;
+    color: #3f5870;
 }
 
 .sun img {
@@ -738,7 +743,7 @@ a.photo-item {
 .left-dropmenu li {
     width: 310px;
     height: 60px;
-    background-color: #3f5870;
+    background-color: #285a93;
     margin-bottom: 10px;
     text-align: left;
     padding-left: 20px;
@@ -964,7 +969,7 @@ a.photo-item {
     margin-top: 15px;
     width: 100%;
     margin-bottom: 10px;
-    background-color: #658497;
+    background-color: #285a93;
     border: solid 2px #658497;
 }
 
@@ -987,6 +992,7 @@ a.photo-item {
 
 .about-form {
     text-align: center;
+    margin-bottom: 0px;
 }
 
 label {
@@ -1065,7 +1071,7 @@ label {
 }
 
 .container-productCategory ul {
-    margin-left: 40px;
+    padding-left: 40px;
     margin-bottom: 10px;
 }
 
@@ -1122,6 +1128,19 @@ span.warn {
     padding-left: 30px;
 }
 
+.all-pages>span {
+    padding-right: 10px;
+}
+
+.mse2_number_inputs.row {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-text .large-text {
+    text-transform: uppercase;
+}
+
 
 /* ---- гамбургер ---- */
 
@@ -1136,7 +1155,7 @@ span.warn {
     top: 0;
     width: 100%;
     height: 74px;
-    background: #658497;
+    background: #ffffff;
     z-index: 10;
 }
 
@@ -1185,65 +1204,6 @@ span.warn {
 }
 
 
-/* стили фильтров */
-
-.mse2_number_inputs label {
-    margin-right: 10px;
-}
-
-.col-filtermenu>form {
-    padding-right: 20px;
-    border-right: solid 2px lightgrey;
-}
-
-fieldset.disabled_fieldsets {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-h4.filter_title {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-}
-
-input.filter-price {
-    text-align: center;
-    font-size: 18px;
-}
-
-label.filter-price {
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-}
-
-.filter-checkbox {
-    font-size: 18px;
-}
-
-input.filter-checkbox {
-    transform: scale(1.1);
-}
-
-button[type='reset'] {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: #fff;
-    background-color: #658497;
-}
-
-button[type='reset']:hover {
-    background-color: #3f5870;
-    color: #fff;
-}
-
-.container-productCategory>.row {
-    margin-bottom: 20px;
-}
-
-
 /* кнопка */
 
 .btn_more {
@@ -1286,9 +1246,6 @@ button[type='reset']:hover {
     .container-products {
         margin-top: 100px;
     }
-    .container-map {
-        margin-top: 50px;
-    }
     .header {
         display: none;
     }
@@ -1313,7 +1270,7 @@ button[type='reset']:hover {
         width: 30px;
         height: 3px;
         margin: 5px auto;
-        background-color: #fff;
+        background-color: #000;
         transition: 0.2s;
     }
     .popup {
@@ -1387,8 +1344,13 @@ button[type='reset']:hover {
         font-size: 14px;
     }
     .col-contacts {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .col-contacts h2,
+    .col-form h2 {
+        font-size: 20px;
     }
     .btn-calc-footer,
     .sun img {
@@ -1455,6 +1417,9 @@ button[type='reset']:hover {
     .footer-mail {
         font-size: 16px;
     }
+    .row-product-content img {
+        height: 200px;
+    }
 }
 
 
@@ -1468,6 +1433,13 @@ button[type='reset']:hover {
     .footer-tel,
     .footer-mail {
         font-size: 16px;
+    }
+    .all-products-pages {
+        flex-direction: column;
+        align-items: center;
+    }
+    .all-pages {
+        margin-top: 10px;
     }
 }
 
@@ -1498,9 +1470,6 @@ button[type='reset']:hover {
     .row-heading-productCategory {
         margin-top: 0;
     }
-    .row-heading-productCategory img {
-        height: 60px;
-    }
     .all-products-pages div {
         font-size: 16px;
     }
@@ -1513,7 +1482,7 @@ button[type='reset']:hover {
         font-size: 16px;
     }
     .popup {
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -1531,7 +1500,6 @@ button[type='reset']:hover {
     }
     .btn-calc-footer {
         margin-top: 10px;
-        /* margin-left: 5px; */
         width: 50%;
     }
 }
@@ -1642,14 +1610,14 @@ input.filter-checkbox {
     transform: scale(1.1);
 }
 
-button[type=reset] {
+button[type='reset'] {
     margin-top: 40px;
     margin-bottom: 20px;
     color: #fff;
     background-color: #658497;
 }
 
-button[type=reset]:hover {
+button[type='reset']:hover {
     background-color: #3f5870;
     color: #fff;
 }
@@ -1667,6 +1635,14 @@ button[type=reset]:hover {
 }
 
 @media (max-width: 320px) {
+    .row-heading-productCategory h1 {
+        height: 50px;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .row-heading-productCategory img {
+        height: 50px;
+    }
     .row-price-heading {
         display: none;
     }
@@ -1699,6 +1675,9 @@ button[type=reset]:hover {
 }
 
 @media (max-width: 991px) {
+    .col-filtermenu>form {
+        border-right: none;
+    }
     .row-price-heading {
         display: none;
     }
@@ -1714,6 +1693,14 @@ button[type=reset]:hover {
     }
     .row-heading-productCategory {
         margin-bottom: 5px;
+    }
+    .row-heading-productCategory h1 {
+        height: 70px;
+        line-height: 80px;
+        font-size: 16px;
+    }
+    .row-heading-productCategory img {
+        height: 70px;
     }
     .nameOfProductAndImg,
     .price-and-cost {
@@ -1742,6 +1729,26 @@ button[type=reset]:hover {
     }
     .price-and-cost .in-stock {
         text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .row-heading-productCategory h1 {
+        line-height: 42px;
+    }
+    .row-heading-productCategory img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .row-heading-productCategory h1 {
+        height: 50px;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .row-heading-productCategory img {
+        height: 50px;
     }
 }
 
@@ -1819,70 +1826,5 @@ button[type=reset]:hover {
     .row-product-content,
     .product-text {
         margin-left: 0;
-    }
-}
-
-
-/* ---- modal window for filters ---- */
-
-.navbar__wrap {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-}
-
-@media (min-width: 992px) {
-    .popupFilter {
-        display: none;
-    }
-}
-
-@media (min-width: 992px) {
-    .menuFilter>form,
-    .navbar {
-        display: none;
-    }
-}
-
-
-/* стили для фильтров в модальном окне
-экрана до 991px */
-
-@media (max-width: 991px) {
-    .col-filtermenu {
-        display: none;
-    }
-    .navbar__wrap .menuFilter {
-        display: none;
-    }
-    .modalBtnFilter {
-        display: flex;
-        align-items: center;
-    }
-    .modalBtnFilter__field {
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-    .btn-filter {
-        color: #fff;
-    }
-    .popupFilter {
-        position: fixed;
-        top: 262px;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        z-index: 9;
-        display: flex;
-        transition: 0.3s;
-        background-color: #ffffff;
-    }
-    .popupFilter.open {
-        left: 0;
-    }
-    .popupFilter .menuFilter {
-        width: 73%;
-        height: 100%;
-        padding: 0px;
     }
 }
