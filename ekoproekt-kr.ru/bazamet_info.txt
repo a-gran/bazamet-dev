@@ -1,0 +1,34 @@
+colors:
+#000000 - черный - обычный текст
+#ffffff - белый - фон и обычный текст где-то
+
+Плашка из Figma серых цветов от светлого к темному
+#d0d9de
+#b0bfc6
+#90a4af
+#617e8c
+#455b66
+#253238
+
+#abadaa - серый (пастэльный)
+#f2ac7fF2 - оранжевый (пастэльный)
+
+
+Цвета с сайта конкурентов https://www.mpstar.ru/
+#fdfdfd - желтый
+#658497 - пастэльный синий
+#3f5870 - темно-синий
+#779eca - более синий
+#212a33 - очень темно-синий (Заголовки)
+
+
+шрифт: Roboto (Thin, Light, Regular)
+
+bazamet.ru/manager/
+login: alex
+pass: !ekoproekt2000!
+
+Примеры
+https://metallregion-yug.ru/
+https://bazamet.ru/
+http://3607.wp.shabloner.ru/
