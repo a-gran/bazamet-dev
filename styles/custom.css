@@ -151,6 +151,11 @@ input[type='text'] {
     padding-right: 0px;
 }
 
+.menu-links>a:hover,
+.menu-links-footer>a:hover {
+    text-decoration: underline;
+}
+
 .top-header-menu-logo.row {
     margin-bottom: 10px;
 }
@@ -742,13 +747,13 @@ a.photo-item {
 
 .left-dropmenu li {
     width: 310px;
-    height: 60px;
+    height: auto;
     background-color: #285a93;
     margin-bottom: 10px;
     text-align: left;
     padding-left: 20px;
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 25px;
     color: #fff;
     list-style: none;
 }
@@ -784,7 +789,12 @@ a.photo-item {
 .left-dropmenu-items li a {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
+}
+
+.left-dropmenu>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .left-dropmenu-items li:last-child {
@@ -1087,8 +1097,7 @@ span.warn {
     color: red;
     font-size: 24px;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .row-heading-textAboutCompany img {
@@ -1275,7 +1284,7 @@ span.warn {
     }
     .popup {
         position: fixed;
-        top: 75px;
+        top: 74px;
         left: -100%;
         width: 100%;
         height: 100%;
@@ -1734,7 +1743,8 @@ button[type='reset']:hover {
 
 @media (max-width: 575px) {
     .row-heading-productCategory h1 {
-        line-height: 42px;
+        line-height: 28px;
+        font-size: 14px;
     }
     .row-heading-productCategory img {
         height: 50px;
@@ -1776,6 +1786,9 @@ button[type='reset']:hover {
     }
     .price-and-cost .in-stock {
         text-align: center;
+    }
+    .row-heading-productCategory h1 {
+        font-size: 24px;
     }
 }
 
