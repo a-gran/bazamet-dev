@@ -255,8 +255,8 @@ marquee {
     background-color: #fff;
     opacity: 0.9;
     padding: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
+    text-transform:uppercase;
+    font-weight:bold;
 }
 
 .slide-content:hover {
@@ -792,7 +792,7 @@ a.photo-item {
     height: auto;
 }
 
-.left-dropmenu>li>a {
+.left-dropmenu > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1066,6 +1066,7 @@ label {
 .row-heading-productCategory {
     margin-bottom: 20px;
     position: relative;
+    --bs-gutter-x: 0;
 }
 
 .row-heading-productCategory h1 {
@@ -1074,6 +1075,7 @@ label {
     height: 100px;
     width: 100%;
     line-height: 100px;
+    background: #00000066;
 }
 
 .container-productCategory {
@@ -1149,7 +1151,6 @@ span.warn {
 .product-text .large-text {
     text-transform: uppercase;
 }
-
 
 /* ---- гамбургер ---- */
 
@@ -1450,6 +1451,7 @@ span.warn {
     .all-pages {
         margin-top: 10px;
     }
+
 }
 
 
@@ -1839,5 +1841,218 @@ button[type='reset']:hover {
     .row-product-content,
     .product-text {
         margin-left: 0;
+    }
+}
+
+/* whatsapp */
+
+.whatsapp-button {
+       background: #25D366;
+       border: 3px solid #1cc15a;
+       border-radius: 50%;
+       box-shadow: 0 8px 10px rgba(7, 206, 112, 0.6);
+       cursor: pointer;
+       height: 68px;
+       text-align: center;
+       width: 68px;
+       position: fixed;
+       right: 5%;
+       bottom: 8%;
+       z-index: 9999;
+       transition: .3s;
+       -webkit-animation: hoverWave linear 1s infinite;
+       animation: hoverWave linear 1s infinite;
+}
+ 
+.whatsapp-button .text-button {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    top: 7px;
+    left: -3px;
+    position: absolute;
+    overflow: hidden;
+}
+.whatsapp-button .text-button span {
+    text-align: center;
+    color: #23a455;
+    opacity: 0;
+    font-size: 0;
+    position: absolute;
+    right: 7px;
+    top: 19px;
+    line-height: 14px;
+    font-weight: 600;
+    transition: opacity .3s linear;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+.whatsapp-button .text-button:hover span {
+    opacity: 1;
+        font-size: 11px;
+}
+.whatsapp-button:hover i {
+        display:none;
+}
+.whatsapp-button:hover {
+        z-index:1;
+        background:#fff;
+        color:transparent;
+        transition:.3s;
+}
+.whatsapp-button:hover i {
+        color:#25D366;
+        font-size:44px;
+        transition:.3s;
+}
+.whatsapp-button i {
+        color:#fff;
+        font-size:44px;
+        transition:.3s;
+        padding-right: 5px;
+        line-height: 63px;transition: .5s ease-in-out;
+        animation: 1200ms ease 0s normal none 1 running shake;
+        animation-iteration-count: infinite;
+        -webkit-animation: 1200ms ease 0s normal none 1 running shake;
+        -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes hoverWave {
+        0% {
+        box-shadow:0 8px 10px rgba(7,206,112,0.3),0 0 0 0 rgba(7,206,112,0.2),0 0 0 0 rgba(7,206,112,0.2)
+}
+40% {
+        box-shadow:0 8px 10px rgba(7,206,112,0.3),0 0 0 15px rgba(7,206,112,0.2),0 0 0 0 rgba(7,206,112,0.2)
+}
+80% {
+        box-shadow:0 8px 10px rgba(7,206,112,0.3),0 0 0 30px rgba(7,206,112,0),0 0 0 26.7px rgba(7,206,112,0.067)
+}
+100% {
+        box-shadow:0 8px 10px rgba(7,206,112,0.3),0 0 0 30px rgba(7,206,112,0),0 0 0 40px rgba(7,206,112,0.0)
+}
+}@keyframes hoverWave {
+        0% {
+        box-shadow:0 8px 10px rgba(7,206,112,0.3),0 0 0 0 rgba(7,206,112,0.2),0 0 0 0 rgba(7,206,112,0.2)
+}
+40% {
+        box-shadow:0 8px 10px rgba(7,206,112,0.3),0 0 0 15px rgba(7,206,112,0.2),0 0 0 0 rgba(7,206,112,0.2)
+}
+80% {
+        box-shadow:0 8px 10px rgba(7,206,112,0.3),0 0 0 30px rgba(7,206,112,0),0 0 0 26.7px rgba(7,206,112,0.067)
+}
+100% {
+        box-shadow:0 8px 10px rgba(7,206,112,0.3),0 0 0 30px rgba(7,206,112,0),0 0 0 40px rgba(7,206,112,0.0)
+}
+}
+@keyframes shake {
+0% {
+    transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+}
+10% {
+    transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        -webkit-transform: rotateZ(-30deg);
+}
+20% {
+    transform: rotateZ(15deg);
+        -ms-transform: rotateZ(15deg);
+        -webkit-transform: rotateZ(15deg);
+}
+30% {
+    transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+}
+40% {
+    transform: rotateZ(7.5deg);
+        -ms-transform: rotateZ(7.5deg);
+        -webkit-transform: rotateZ(7.5deg);
+}
+50% {
+    transform: rotateZ(-6deg);
+        -ms-transform: rotateZ(-6deg);
+        -webkit-transform: rotateZ(-6deg);
+}
+60% {
+    transform: rotateZ(5deg);
+        -ms-transform: rotateZ(5deg);
+        -webkit-transform: rotateZ(5deg);
+}
+70% {
+    transform: rotateZ(-4.28571deg);
+        -ms-transform: rotateZ(-4.28571deg);
+        -webkit-transform: rotateZ(-4.28571deg);
+}
+80% {
+    transform: rotateZ(3.75deg);
+        -ms-transform: rotateZ(3.75deg);
+        -webkit-transform: rotateZ(3.75deg);
+}
+90% {
+    transform: rotateZ(-3.33333deg);
+        -ms-transform: rotateZ(-3.33333deg);
+        -webkit-transform: rotateZ(-3.33333deg);
+}
+100% {
+    transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+}
+}
+@-webkit-keyframes shake {
+0% {
+    transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+}
+10% {
+    transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        -webkit-transform: rotateZ(-30deg);
+}
+20% {
+    transform: rotateZ(15deg);
+        -ms-transform: rotateZ(15deg);
+        -webkit-transform: rotateZ(15deg);
+}
+30% {
+    transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+}
+40% {
+    transform: rotateZ(7.5deg);
+        -ms-transform: rotateZ(7.5deg);
+        -webkit-transform: rotateZ(7.5deg);
+}
+50% {
+    transform: rotateZ(-6deg);
+        -ms-transform: rotateZ(-6deg);
+        -webkit-transform: rotateZ(-6deg);
+}
+60% {
+    transform: rotateZ(5deg);
+        -ms-transform: rotateZ(5deg);
+        -webkit-transform: rotateZ(5deg);
+}
+70% {
+    transform: rotateZ(-4.28571deg);
+        -ms-transform: rotateZ(-4.28571deg);
+        -webkit-transform: rotateZ(-4.28571deg);
+}
+80% {
+    transform: rotateZ(3.75deg);
+        -ms-transform: rotateZ(3.75deg);
+        -webkit-transform: rotateZ(3.75deg);
+}
+90% {
+    transform: rotateZ(-3.33333deg);
+        -ms-transform: rotateZ(-3.33333deg);
+        -webkit-transform: rotateZ(-3.33333deg);
+}
+100% {
+    transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
     }
 }
